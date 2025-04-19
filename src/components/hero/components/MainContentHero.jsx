@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Show, Text, Box } from "@chakra-ui/react"
+import { Flex, Heading, Image, Show, Text, Box, Button } from "@chakra-ui/react"
 import trustedUsers from "../../../assets/trusted-users.svg"
 import bounties from "../../../assets/bounties.svg"
 import peerLearning from "../../../assets/peer-learning.svg"
@@ -7,6 +7,8 @@ import alumniNetwork from "../../../assets/alumni-network.svg"
 import doubtSession from "../../../assets/doubt-session.svg"
 import groupProjects from "../../../assets/group-projects.svg"
 import virtualHostel from "../../../assets/virtual-hostel.svg"
+import rightArrow from "../../../assets/right-arrow.svg"
+import playButton from "../../../assets/play-button.svg"
 
 const Usps = ({ iconSrc, name }) => {
     return (
@@ -82,8 +84,25 @@ const MainContentHero = () => {
                         <Usps iconSrc={groupProjects} name="Group Projects" />
                     </Flex>
                 </Show>
-                <Flex>
-
+                <Flex gap={'16px'}>
+                    <Button 
+                        backgroundColor={'primary'} 
+                        color={'white.0'}
+                        onClick={() => window.location.href = 'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
+                    >
+                        <Flex align={'center'}>
+                            <Image src={rightArrow}/>
+                            <Text>
+                                Check all Live Cohorts
+                            </Text>
+                            <Image src={rightArrow}/>
+                        </Flex>
+                    </Button>
+                    <Button borderRadius={'24px'} border={'1px solid #FE9332'} padding={0} backgroundColor={'white.0'}>
+                        <Flex justifyContent={'center'} alignItems={'center'}>
+                            <Image src={playButton}/>
+                        </Flex>
+                    </Button>
                 </Flex>
             </Flex>
         </Flex>
