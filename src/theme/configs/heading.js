@@ -2,19 +2,26 @@ import { defineStyleConfig } from '@chakra-ui/react'
 
 const heading = defineStyleConfig({
     baseStyle: {
-        fontFamily: 'Urbanist',
+        fontFamily: 'Public Sans',
     },
+    // https://v2.chakra-ui.com/docs/styled-system/theme
     variants: {
-        'desktop-title': {
-            fontSize: 'title-desktop',
-            color: 'solitude',
-            fontWeight: 'normal',
-            letterSpacing: 'title-desktop',
+        'h1': {
+            fontSize: 'h1',
+            color: 'accent-foreground',
+            fontWeight: 'extrabold',
+            letterSpacing: 'h1',
+        },
+        'h3': {
+            fontSize: 'h3',
+            color: 'accent-foreground',
+            fontWeight: 'semibold',
+            letterSpacing: 'h3',
         }
     },
     // The default variant value
     defaultProps: {
-        variant: 'desktop',
+        variant: 'h1',
     },
 })
 

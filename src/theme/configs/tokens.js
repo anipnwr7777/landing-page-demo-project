@@ -15,16 +15,20 @@ const tokens = {
             20: 'rgba(0, 0, 0, 0.20);',
             40: 'rgba(0, 0, 0, 0.40);',
         },
-        primary: '#FE9332'
+        primary: '#FE9332',
+        'accent-foreground': '#18181B'
     },
     fontSizes: {
-        'h1-desktop': '24px'
+        'h1': '48px',
+        'h3': '24px'
     },
     lineHeights: {
-        'h1-desktop': '30px'
+        'h1': '48px',
+        'h3': '32px'
     },
     letterSpacings: {
-        'h1-desktop': '3.6px'
+        'h1': '-0.576px',
+        'h3': '-0.144px'
     },
     breakpoints: {
         sm: '480px',
