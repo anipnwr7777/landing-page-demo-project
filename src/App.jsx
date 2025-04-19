@@ -6,7 +6,7 @@ import bgVector from "./assets/bg-vector.svg"
 const App = () => {
 	return (
 		<Flex
-			height={'100vh'}
+			height={'200vh'}
 			flexDirection={'column'}
 			alignItems={{ base: 'flex-start', md: 'center' }}
 		>
