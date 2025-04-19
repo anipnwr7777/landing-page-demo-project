@@ -67,7 +67,12 @@ const Navbar = () => {
                     </Flex>
                 </Show>
                 <Flex gap={'24px'} align={'center'}>
-                    <Button padding={'12px 30px'} backgroundColor={'primary'} color={'white.0'}>
+                    <Button 
+                        padding={'12px 30px'} 
+                        backgroundColor={'primary'} 
+                        color={'white.0'}
+                        onClick={() => window.location.href = 'https://courses.chaicode.com/learn/account/signin'}
+                    >
                         Log In
                     </Button>
                     <Hide above="md">
