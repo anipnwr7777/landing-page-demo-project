@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Image, Show, Text } from "@chakra-ui/react"
+import { useState, useEffect } from "react"
 import chaiCodeNavbarLogo from "../assets/chaicode-nav-logo.svg"
 import cohortNavIcon from "../assets/cohorts-nav-icon.svg"
 import docsNavIcon from "../assets/docs-nav-icon.svg"
@@ -15,6 +16,21 @@ const NavItem = ({iconSrc, name}) => {
 }
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <Flex
             width="100%"
@@ -22,6 +38,9 @@ const Navbar = () => {
             borderBottom={'2px solid black'}
             position={'sticky'}
             top={'0'}
+            backgroundColor={isScrolled ? 'white.0' : 'transparent'}
+            transition="background-color 0.3s"
+            zIndex={1000}
         >
             <Flex
                 width="100%"
