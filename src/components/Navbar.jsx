@@ -36,7 +36,6 @@ const Navbar = () => {
         <Flex
             width="100%"
             justify="center"
-            borderBottom={'2px solid black'}
             position={'sticky'}
             top={'0'}
             backgroundColor={isScrolled ? 'white.0' : 'transparent'}
