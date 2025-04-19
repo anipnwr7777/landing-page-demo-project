@@ -5,7 +5,7 @@ const BodyContent = () => {
         <Flex
             flexDirection={'column'}
             height={'100vh'}
-            backgroundColor={'pink'}
+            border={'2px solid blue'}
             width={'600px'}
             mx={{base: '24px', md: '48px', lg: '64px'}}
         >

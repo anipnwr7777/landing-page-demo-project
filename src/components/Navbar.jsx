@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <Flex
             width={'100%'}
-            backgroundColor={'blue'}
+            border={'2px solid black'}
             height={'100px'}
         >
 
