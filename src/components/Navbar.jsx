@@ -1,10 +1,11 @@
-import { Box, Button, Flex, Image, Show, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Show, Hide, Text } from "@chakra-ui/react"
 import { useState, useEffect } from "react"
 import chaiCodeNavbarLogo from "../assets/chaicode-nav-logo.svg"
 import cohortNavIcon from "../assets/cohorts-nav-icon.svg"
 import docsNavIcon from "../assets/docs-nav-icon.svg"
 import reviewsNavIcon from "../assets/reviews-nav-icon.svg"
 import udemyNavIcon from "../assets/udemy-nav-icons.svg"
+import hamburgerIcon from "../assets/hamburger.svg"
 
 const NavItem = ({iconSrc, name}) => {
     return (
@@ -56,19 +57,29 @@ const Navbar = () => {
                     width={'142px'}
                 />
                 <Show above="md">
-                <Flex
-                    alignItems={'center'}
-                    gap={'32px'}
-                >
-                    <NavItem iconSrc={cohortNavIcon} name="Cohorts" />
-                    <NavItem iconSrc={docsNavIcon} name="Docs" />
-                    <NavItem iconSrc={reviewsNavIcon} name="Reviews" />
-                    <NavItem iconSrc={udemyNavIcon} name="Udemy" />
-                </Flex>
+                    <Flex
+                        alignItems={'center'}
+                        gap={'32px'}
+                    >
+                        <NavItem iconSrc={cohortNavIcon} name="Cohorts" />
+                        <NavItem iconSrc={docsNavIcon} name="Docs" />
+                        <NavItem iconSrc={reviewsNavIcon} name="Reviews" />
+                        <NavItem iconSrc={udemyNavIcon} name="Udemy" />
+                    </Flex>
                 </Show>
-                <Button padding={'12px 30px'} backgroundColor={'primary'} color={'white.0'}>
-                    Log In
-                </Button>
+                <Flex gap={'24px'} align={'center'}>
+                    <Button padding={'12px 30px'} backgroundColor={'primary'} color={'white.0'}>
+                        Log In
+                    </Button>
+                    <Hide above="md">
+                        <Image 
+                            src={hamburgerIcon} 
+                            width={'24px'} 
+                            height={'24px'} 
+                            cursor={'pointer'}
+                        />
+                    </Hide>
+                </Flex>
             </Flex>
         </Flex>
     )
