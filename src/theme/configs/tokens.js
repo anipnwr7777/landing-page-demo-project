@@ -15,6 +15,7 @@ const tokens = {
             20: 'rgba(0, 0, 0, 0.20);',
             40: 'rgba(0, 0, 0, 0.40);',
         },
+        primary: '#FE9332'
     },
     fontSizes: {
         'h1-desktop': '24px'

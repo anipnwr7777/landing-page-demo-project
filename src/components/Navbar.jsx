@@ -20,11 +20,13 @@ const Navbar = () => {
             width="100%"
             justify="center"
             borderBottom={'2px solid black'}
+            position={'sticky'}
+            top={'0'}
         >
             <Flex
                 width="100%"
                 maxWidth={'1312px'}
-                height={'96px'}
+                height={{ base: '72px', md: '96px'}}
                 align={'center'}
                 justifyContent={'space-between'}
                 px={4}

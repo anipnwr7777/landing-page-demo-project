@@ -2,7 +2,7 @@ import { defineStyleConfig } from '@chakra-ui/react'
 
 const text = defineStyleConfig({
     baseStyle: {
-        fontFamily: 'Urbanist',
+        fontFamily: 'Public Sans',
         fontWeight: 'light',
     },
     variants: {
@@ -14,7 +14,7 @@ const text = defineStyleConfig({
         }
     },
     defaultProps: {
-        variant: 'body-desktop',
+        // variant: 'body-desktop',
     },
 })
 
