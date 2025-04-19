@@ -6,7 +6,8 @@ const BodyContent = () => {
             flexDirection={'column'}
             height={'100vh'}
             border={'2px solid blue'}
-            width={'600px'}
+            maxWidth={'600px'}
+            minWidth={'200px'}
             mx={{base: '24px', md: '48px', lg: '64px'}}
         >
 

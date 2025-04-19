@@ -12,14 +12,19 @@ const App = () => {
 		>
 			<Box
 				position={'absolute'}
-				top={{base: '-25vh', md: '-10vh'}}
-				left={'-10vw'}
+				top={0}
+				left={0}
+				height={'100vh'}
+				width={'100vw'}
 				overflow={'hidden'}
 			>
 				<Image
+					position={'absolute'}
 					src={bgVector}
-					height={'150vh'}
-					width={'200vh'}
+					width={'180%'}
+					height={'180%'}
+					objectFit={'cover'}
+					top={'-200px'}
 				/>
 			</Box>
 			<Navbar />
