@@ -20,15 +20,17 @@ const tokens = {
     },
     fontSizes: {
         'h1': '48px',
-        'h3': '24px'
+        'h3': '24px',
+        'lead': '20px'
     },
     lineHeights: {
         'h1': '48px',
-        'h3': '32px'
+        'h3': '32px',
+        'lead': '28px'
     },
     letterSpacings: {
         'h1': '-0.576px',
-        'h3': '-0.144px'
+        'h3': '-0.144px',
     },
     breakpoints: {
         sm: '480px',

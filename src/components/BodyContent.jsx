@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react"
 import Hero from "./hero"
+import OrgScroll from "./orgScroll"
 
 const BodyContent = () => {
     return (
@@ -12,6 +13,7 @@ const BodyContent = () => {
                 mx={{ base: '24px', md: '48px', lg: '64px' }}
             >
                 <Hero />
+                <OrgScroll />
             </Flex>
         </Flex>
     )

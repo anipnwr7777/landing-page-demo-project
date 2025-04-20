@@ -6,15 +6,16 @@ const text = defineStyleConfig({
         fontWeight: 'light',
     },
     variants: {
-        'body-desktop': {
-            fontSize: 'body-desktop',
-            letterSpacing: 'body-desktop',
-            lineHeight: 'body-desktop',
-            color: 'white.80',
+        'lead': {
+            fontSize: 'lead',
+            letterSpacing: 'lead',
+            lineHeight: 'lead',
+            color: '#18181B',
+            fontWeight: 400
         }
     },
     defaultProps: {
-        // variant: 'body-desktop',
+        // variant: 'lead',
     },
 })
 
