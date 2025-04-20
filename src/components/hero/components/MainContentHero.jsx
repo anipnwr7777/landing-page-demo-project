@@ -9,6 +9,7 @@ import groupProjects from "../../../assets/group-projects.svg"
 import virtualHostel from "../../../assets/virtual-hostel.svg"
 import rightArrow from "../../../assets/right-arrow.svg"
 import playButton from "../../../assets/play-button.svg"
+import chaiIcon from "../../../assets/chai-icon.svg"
 
 const Usps = ({ iconSrc, name }) => {
     return (
@@ -32,9 +33,12 @@ const MainContentHero = () => {
                 </Text>
             </Flex>
             <Show above="md">
-                <Heading align={'center'} mt={'16px'}>
-                    EMPOWER YOUR CODING JOURNEY
-                </Heading>
+                <Flex gap={'8px'} alignItems={'center'} mt={'16px'}>
+                    <Heading align={'center'}>
+                        EMPOWER YOUR CODING JOURNEY
+                    </Heading>
+                    <Image src={chaiIcon} />
+                </Flex>
             </Show>
             <Show below="md">
                 <Heading align={'left'} mt={'16px'}>

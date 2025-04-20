@@ -8,7 +8,7 @@ const BodyContent = () => {
                 width={'100%'}
                 flexDirection={'column'}
                 height={'100vh'}
-                maxWidth={'800px'}
+                maxWidth={'1312px'}
                 mx={{ base: '24px', md: '48px', lg: '64px' }}
             >
                 <Hero />
