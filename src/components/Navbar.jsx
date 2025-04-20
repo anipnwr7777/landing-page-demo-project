@@ -1,11 +1,11 @@
 import { Box, Button, Flex, Image, Show, Hide, Text } from "@chakra-ui/react"
 import { useState, useEffect } from "react"
-import chaiCodeNavbarLogo from "../assets/chaicode-nav-logo.svg"
-import cohortNavIcon from "../assets/cohorts-nav-icon.svg"
-import docsNavIcon from "../assets/docs-nav-icon.svg"
-import reviewsNavIcon from "../assets/reviews-nav-icon.svg"
-import udemyNavIcon from "../assets/udemy-nav-icons.svg"
-import hamburgerIcon from "../assets/hamburger.svg"
+import chaiCodeNavbarLogo from "../assets/svg/chaicode-nav-logo.svg"
+import cohortNavIcon from "../assets/svg/cohorts-nav-icon.svg"
+import docsNavIcon from "../assets/svg/docs-nav-icon.svg"
+import reviewsNavIcon from "../assets/svg/reviews-nav-icon.svg"
+import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
+import hamburgerIcon from "../assets/svg/hamburger.svg"
 
 const NavItem = ({iconSrc, name}) => {
     return (

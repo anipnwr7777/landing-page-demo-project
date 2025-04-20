@@ -1,7 +1,7 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
 import Navbar from "./components/Navbar"
 import BodyContent from "./components/BodyContent"
-import bgVector from "./assets/bg-vector.svg"
+import bgVector from "./assets/svg/bg-vector.svg"
 
 const App = () => {
 	return (
