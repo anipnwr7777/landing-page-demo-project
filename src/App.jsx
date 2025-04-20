@@ -13,7 +13,7 @@ const App = () => {
 				position={'absolute'}
 				top={0}
 				left={0}
-				height={'100vh'}
+				height={'150vh'}
 				width={'100vw'}
 				overflow={'hidden'}
 			>
