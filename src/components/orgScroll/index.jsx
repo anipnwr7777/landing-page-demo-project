@@ -25,6 +25,7 @@ const OrgScroll = () => {
             width={'100%'}
             align={'center'}
             gap={'32px'}
+            paddingy={{base: '32px', md: '64px'}}
         >
             <Show above="md">
                 <Text align={'center'} variant={'lead'}>
