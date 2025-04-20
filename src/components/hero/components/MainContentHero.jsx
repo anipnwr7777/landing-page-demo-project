@@ -10,6 +10,8 @@ import virtualHostel from "../../../assets/virtual-hostel.svg"
 import rightArrow from "../../../assets/right-arrow.svg"
 import playButton from "../../../assets/play-button.svg"
 import chaiIcon from "../../../assets/chai-icon.svg"
+import rippleIcon from "../../../assets/ripple.lottie"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Usps = ({ iconSrc, name }) => {
     return (
@@ -94,8 +96,27 @@ const MainContentHero = () => {
                         color={'white.0'}
                         onClick={() => window.location.href = 'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
                     >
-                        <Flex align={'center'}>
-                            <Image src={rightArrow}/>
+                        <Flex align={'center'} position={'relative'}>
+                            <Box 
+                                position={'absolute'} 
+                                left={'0px'}
+                                // top={0} 
+                                // width="100%" 
+                                // height="100%" 
+                                // overflow="hidden"
+                                // pointerEvents="none"
+                            >
+                                {/* <DotLottieReact
+                                    src={rippleIcon}
+                                    loop
+                                    autoplay
+                                    // style={{
+                                    //     width: '100%',
+                                    //     height: '100%',
+                                    //     // objectFit: 'cover'
+                                    // }}
+                                /> */}
+                            </Box>
                             <Text>
                                 Check all Live Cohorts
                             </Text>
