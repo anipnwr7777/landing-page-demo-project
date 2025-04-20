@@ -12,6 +12,7 @@ import playButton from "../../../assets/svg/play-button.svg"
 import chaiIcon from "../../../assets/svg/chai-icon.svg"
 import rippleIcon from "../../../assets/lottie/ripple.lottie"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import chartIcon from '../../../assets/lottie/chart.lottie'
 
 const Usps = ({ iconSrc, name }) => {
     return (
@@ -33,6 +34,17 @@ const MainContentHero = () => {
                 <Text align={'center'}>
                     Trusted by 1.5M code Learners
                 </Text>
+                {/* <Box height={'48px'} width={'46px'}>
+                    <DotLottieReact
+                        src={chartIcon}
+                        loop
+                        autoplay
+                        // style={{
+                        //     width: '70px',
+                        //     height: '50px',
+                        // }}
+                    />
+                </Box> */}
             </Flex>
             <Show above="md">
                 <Flex gap={'8px'} alignItems={'center'} mt={'16px'}>
