@@ -107,27 +107,29 @@ const MainContentHero = () => {
                         backgroundColor={'primary'} 
                         color={'white.0'}
                         onClick={() => window.location.href = 'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
+                        overflow={'hidden'}
                     >
-                        <Flex align={'center'} position={'relative'}>
-                            <Box 
-                                position={'absolute'} 
-                                left={'0px'}
-                                // top={0} 
-                                // width="100%" 
-                                // height="100%" 
-                                // overflow="hidden"
-                                // pointerEvents="none"
+                        <Flex align={'center'} position={'relative'} gap={'8px'}>
+                            <Box
+                                width="40px"
+                                height="40px"
+                                position={'relative'}
                             >
-                                {/* <DotLottieReact
-                                    src={rippleIcon}
-                                    loop
-                                    autoplay
-                                    // style={{
-                                    //     width: '100%',
-                                    //     height: '100%',
-                                    //     // objectFit: 'cover'
-                                    // }}
-                                /> */}
+                                <Box
+                                    position={'absolute'}
+                                    top={'-200%'}
+                                    left={'-200%'}
+                                >
+                                    <DotLottieReact
+                                        src={rippleIcon}
+                                        loop
+                                        autoplay
+                                        style={{
+                                            width: '200px',
+                                            height: '200px',
+                                        }}
+                                    />
+                                </Box>
                             </Box>
                             <Text>
                                 Check all Live Cohorts
