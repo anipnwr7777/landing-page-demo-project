@@ -17,7 +17,13 @@ const heading = defineStyleConfig({
             color: 'accent-foreground',
             fontWeight: 'semibold',
             letterSpacing: 'h3',
-        }
+        },
+        'h2': {
+            fontSize: 'h2',
+            color: 'accent-foreground',
+            fontWeight: 'semibold',
+            letterSpacing: 'h2',
+        },
     },
     // The default variant value
     defaultProps: {
