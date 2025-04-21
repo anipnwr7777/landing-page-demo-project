@@ -29,22 +29,18 @@ const MainContentHero = () => {
             flexDirection={'column'}
             alignItems={{ base: 'flex-start', md: 'center' }}
         >
-            <Flex gap={'8px'}>
+            <Flex gap={'8px'} width={'100%'} justifyContent={'center'} align={'center'}>
                 <Image src={trustedUsers} />
                 <Text align={'center'}>
                     Trusted by 1.5M code Learners
                 </Text>
-                {/* <Box height={'48px'} width={'46px'}>
+                <Box height={'32px'} width={'32px'}>
                     <DotLottieReact
                         src={chartIcon}
                         loop
                         autoplay
-                        // style={{
-                        //     width: '70px',
-                        //     height: '50px',
-                        // }}
                     />
-                </Box> */}
+                </Box>
             </Flex>
             <Show above="md">
                 <Flex gap={'8px'} alignItems={'center'} mt={'16px'}>
