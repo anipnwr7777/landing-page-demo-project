@@ -38,8 +38,9 @@ const Navbar = () => {
             justify="center"
             position={'sticky'}
             top={'0'}
-            backgroundColor={isScrolled ? 'white.0' : 'transparent'}
-            transition="background-color 0.3s"
+            backgroundColor={isScrolled ? 'rgba(255, 255, 255, 0.7)' : 'transparent'}
+            backdropFilter={isScrolled ? 'blur(10px)' : 'none'}
+            transition="all 0.3s ease"
             zIndex={1000}
         >
             <Flex
