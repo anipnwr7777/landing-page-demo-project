@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react"
 import Hero from "./hero"
 import OrgScroll from "./orgScroll"
+import TweetLove from "./tweet-love"
 
 const BodyContent = () => {
     return (
@@ -14,6 +15,7 @@ const BodyContent = () => {
             >
                 <Hero />
                 <OrgScroll />
+                <TweetLove />
             </Flex>
         </Flex>
     )
