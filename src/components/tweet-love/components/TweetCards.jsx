@@ -7,6 +7,8 @@ const TweetCards = () => {
             gap={'32px'}
             align={'center'}
             mt={'32px'}
+            width={'80vw'}
+            overflow={'scroll'}
         >
             <TweetCard
                 height={'429px'}
