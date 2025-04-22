@@ -1,13 +1,14 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 import codingIcon from "../../assets/lottie/coding.lottie"
-import GridLayout from "../common/GridLayout"
+import GridLayout from "./components/GridLayout"
+import CTAButton from "../common/CTAButton"
 
 const Cohorts = () => {
     return (
         <Flex
             flexDirection={'column'}
-            align={'center'}
+            align={{base: 'flex-start', md: 'center'}}
             py={'64px'}
         >
             <Flex gap={'16px'} alignItems={'center'}>
@@ -25,6 +26,9 @@ const Cohorts = () => {
             </Text>
             <Box mt={'32px'} width={'100%'}>
                 <GridLayout />
+            </Box>
+            <Box mt={'32px'}>
+                <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'} />
             </Box>
         </Flex>
     )

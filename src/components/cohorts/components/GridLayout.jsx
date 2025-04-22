@@ -1,4 +1,5 @@
 import { Grid, Box } from "@chakra-ui/react"
+import CourseCard from "./CourseCard"
 
 const GridLayout = () => {
     return (
@@ -10,7 +11,10 @@ const GridLayout = () => {
             }}
             gap="24px"
             width="100%"
-            justifyContent="center"      // Center the entire grid
+            justifyContent={{
+                base: "flex-start",
+                md: "center"
+            }}
         >
             {/* Create 6 placeholder boxes */}
             {[...Array(6)].map((_, index) => (
@@ -18,14 +22,14 @@ const GridLayout = () => {
                     key={index}
                     height="550px"
                     width="436px"
-                    bg="primary"
+                    // bg="primary"
                     borderRadius="lg"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     color="white.0"
                 >
-                    Card {index + 1}
+                    <CourseCard />
                 </Box>
             ))}
         </Grid>

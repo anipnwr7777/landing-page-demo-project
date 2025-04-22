@@ -16,26 +16,38 @@ const tokens = {
             40: 'rgba(0, 0, 0, 0.40);',
         },
         primary: '#FE9332',
-        'accent-foreground': '#18181B'
+        'accent-foreground': '#18181B',
+        'border': '#E4E4E7',
+        'muted-foreground': '#71717A',
+        'success': '#008A2E'
     },
     fontSizes: {
         'h1': '48px',
         'h3': '24px',
         'lead': '20px',
         'h2': '30px',
-        'p-ui': '16px'
+        'p-ui': '16px',
+        'token': '12px',
+        'h4': '20px',
+        'body': '14px',
+        'p-ui-medium': '16px'
     },
     lineHeights: {
         'h1': '48px',
         'h3': '32px',
         'lead': '28px',
         'h2': '36px',
-        'p-ui': '24px'
+        'p-ui': '24px',
+        'token': '20px',
+        'h4': '28px',
+        'body': '24px',
+        'p-ui-medium': '24px'
     },
     letterSpacings: {
         'h1': '-0.576px',
         'h3': '-0.144px',
         'h2': '-0.225px',
+        'h4': '-0.1px'
     },
     breakpoints: {
         sm: '480px',

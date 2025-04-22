@@ -24,6 +24,13 @@ const heading = defineStyleConfig({
             fontWeight: 'semibold',
             letterSpacing: 'h2',
         },
+        'h4': {
+            fontSize: 'h4',
+            color: 'black',
+            fontWeight: 'semibold',
+            letterSpacing: 'h4',
+            lineHeight: 'h4'
+        }
     },
     // The default variant value
     defaultProps: {
