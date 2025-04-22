@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 import loveIcon from "../../assets/lottie/love.lottie"
 import tweetLoveBg from "../../assets/svg/tweet-love-bg.svg"
+import TweetCards from "./components/TweetCards"
 
 const TweetLove = () => {
     return (
@@ -44,6 +45,7 @@ const TweetLove = () => {
             <Text variant={'lead'} mt={'8px'}>
                 Love That We Are Getting From Our Community
             </Text>
+            <TweetCards />
         </Flex>
     )
 }

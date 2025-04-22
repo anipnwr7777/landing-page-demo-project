@@ -22,18 +22,20 @@ const tokens = {
         'h1': '48px',
         'h3': '24px',
         'lead': '20px',
-        'h2': '30px'
+        'h2': '30px',
+        'p-ui': '16px'
     },
     lineHeights: {
         'h1': '48px',
         'h3': '32px',
         'lead': '28px',
-        'h2': '36px'
+        'h2': '36px',
+        'p-ui': '24px'
     },
     letterSpacings: {
         'h1': '-0.576px',
         'h3': '-0.144px',
-        'h2': '-0.225px'
+        'h2': '-0.225px',
     },
     breakpoints: {
         sm: '480px',

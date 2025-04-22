@@ -12,6 +12,13 @@ const text = defineStyleConfig({
             lineHeight: 'lead',
             color: '#18181B',
             fontWeight: 400
+        },
+        'p-ui': {
+            fontSize: 'p-ui',
+            letterSpacing: 'p-ui',
+            lineHeight: 'p-ui',
+            color: '#000000',
+            fontWeight: 400
         }
     },
     defaultProps: {
