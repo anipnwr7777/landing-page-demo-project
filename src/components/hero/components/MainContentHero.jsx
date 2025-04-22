@@ -7,12 +7,11 @@ import alumniNetwork from "../../../assets/svg/alumni-network.svg"
 import doubtSession from "../../../assets/svg/doubt-session.svg"
 import groupProjects from "../../../assets/svg/group-projects.svg"
 import virtualHostel from "../../../assets/svg/virtual-hostel.svg"
-import rightArrow from "../../../assets/svg/right-arrow.svg"
 import playButton from "../../../assets/svg/play-button.svg"
 import chaiIcon from "../../../assets/svg/chai-icon.svg"
-import rippleIcon from "../../../assets/lottie/ripple.lottie"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import chartIcon from '../../../assets/lottie/chart.lottie'
+import CTAButton from "../../common/CTAButton"
 
 const Usps = ({ iconSrc, name }) => {
     return (
@@ -99,40 +98,7 @@ const MainContentHero = () => {
                     </Flex>
                 </Show>
                 <Flex gap={'16px'}>
-                    <Button 
-                        backgroundColor={'primary'} 
-                        color={'white.0'}
-                        onClick={() => window.location.href = 'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
-                        overflow={'hidden'}
-                    >
-                        <Flex align={'center'} position={'relative'} gap={'8px'}>
-                            <Box
-                                width="40px"
-                                height="40px"
-                                position={'relative'}
-                            >
-                                <Box
-                                    position={'absolute'}
-                                    top={'-200%'}
-                                    left={'-200%'}
-                                >
-                                    <DotLottieReact
-                                        src={rippleIcon}
-                                        loop
-                                        autoplay
-                                        style={{
-                                            width: '200px',
-                                            height: '200px',
-                                        }}
-                                    />
-                                </Box>
-                            </Box>
-                            <Text>
-                                Check all Live Cohorts
-                            </Text>
-                            <Image src={rightArrow}/>
-                        </Flex>
-                    </Button>
+                    <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'}/>
                     <Button borderRadius={'24px'} border={'1px solid #FE9332'} padding={0} backgroundColor={'white.0'}>
                         <Flex justifyContent={'center'} alignItems={'center'}>
                             <Image src={playButton}/>
