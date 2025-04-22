@@ -5,8 +5,8 @@ const GridLayout = () => {
         <Grid
             templateColumns={{
                 base: "300px",           // 1 column with fixed width
-                md: "repeat(2, 300px)",  // 2 columns with fixed width
-                lg: "repeat(3, 300px)"   // 3 columns with fixed width
+                md: "repeat(2, 436px)",  // 2 columns with fixed width
+                lg: "repeat(3, 436px)"   // 3 columns with fixed width
             }}
             gap="24px"
             width="100%"
@@ -16,8 +16,8 @@ const GridLayout = () => {
             {[...Array(6)].map((_, index) => (
                 <Box
                     key={index}
-                    height="200px"
-                    width="300px"
+                    height="550px"
+                    width="436px"
                     bg="primary"
                     borderRadius="lg"
                     display="flex"
