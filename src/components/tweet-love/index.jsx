@@ -12,6 +12,7 @@ const TweetLove = () => {
             align={'center'}
             py={'64px'}
             position={'relative'}
+            width={'100%'}
         >
             <Box
                 zIndex={'-2'}

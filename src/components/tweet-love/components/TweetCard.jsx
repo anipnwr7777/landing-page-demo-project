@@ -10,6 +10,7 @@ const TweetCard = ({height, width, content}) => {
             flexDirection={'column'}
             gap={'24px'}
             border={'1px solid #CCC'}
+            background={'white.0'}
         >
             <Flex alignItems={'center'} gap={'12px'}>
                 <Avatar size={'md'} name={'John Doe'} />
