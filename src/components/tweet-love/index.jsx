@@ -3,6 +3,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 import loveIcon from "../../assets/lottie/love.lottie"
 import tweetLoveBg from "../../assets/svg/tweet-love-bg.svg"
 import TweetCards from "./components/TweetCards"
+import CTAButton from "../common/CTAButton"
 
 const TweetLove = () => {
     return (
