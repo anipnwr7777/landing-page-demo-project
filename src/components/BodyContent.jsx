@@ -3,6 +3,7 @@ import Hero from "./hero"
 import OrgScroll from "./orgScroll"
 import TweetLove from "./tweet-love"
 import Cohorts from "./cohorts"
+import Testimonials from "./testimonials"
 
 const BodyContent = () => {
     return (
@@ -12,12 +13,13 @@ const BodyContent = () => {
                 flexDirection={'column'}
                 height={'100vh'}
                 maxWidth={'1312px'}
-                mx={{ base: '24px', md: '48px', lg: '64px' }}
+                px={{ base: '24px', md: '48px', lg: '64px' }}
             >
                 <Hero />
                 <OrgScroll />
                 <TweetLove />
                 <Cohorts />
+                <Testimonials />
             </Flex>
         </Flex>
     )
