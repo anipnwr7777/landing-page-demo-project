@@ -30,7 +30,9 @@ const tokens = {
         'token': '12px',
         'h4': '20px',
         'body': '14px',
-        'p-ui-medium': '16px'
+        'p-ui-medium': '16px',
+        'p': '16px',
+        'detail': '12px'
     },
     lineHeights: {
         'h1': '48px',
@@ -41,7 +43,9 @@ const tokens = {
         'token': '20px',
         'h4': '28px',
         'body': '24px',
-        'p-ui-medium': '24px'
+        'p-ui-medium': '24px',
+        'p': '28px',
+        'detail': '20px'
     },
     letterSpacings: {
         'h1': '-0.576px',

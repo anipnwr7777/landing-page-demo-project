@@ -40,6 +40,20 @@ const text = defineStyleConfig({
             lineHeight: 'p-ui-medium',
             color: 'success',
             fontWeight: 500
+        },
+        'p': {
+            fontSize: 'p',
+            letterSpacing: 'p',
+            lineHeight: 'p',
+            color: '#000000',
+            fontWeight: 400
+        },
+        'detail': {
+            fontSize: 'detail',
+            letterSpacing: 'detail',
+            lineHeight: 'detail',
+            color: '#808080',
+            fontWeight: 500
         }
     },
     defaultProps: {
