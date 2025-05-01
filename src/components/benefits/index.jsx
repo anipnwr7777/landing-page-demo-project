@@ -43,7 +43,7 @@ const benefitsData = [
 
 const Benefits = () => {
     return (
-        <Flex direction="column" gap={'32px'} py={'96px'} alignItems={'center'}>
+        <Flex direction="column" gap={'32px'} py={{base: '32px', md: '64px', lg: '96px'}} alignItems={'center'}>
             <Flex gap={'16px'} flexDirection={'column'}>
                 <Heading variant={'h2'} textAlign={{ base: "start", md: "center" }}>
                     Key Benefits of Cohorts

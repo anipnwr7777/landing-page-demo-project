@@ -10,7 +10,7 @@ const TweetLove = () => {
         <Flex
             flexDirection={'column'}
             align={'center'}
-            py={'64px'}
+            py={{base: '32px', md: '64px', lg: '96px'}}
             position={'relative'}
             width={'100%'}
         >

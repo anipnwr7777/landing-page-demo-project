@@ -94,7 +94,7 @@ const Testimonials = () => {
         <Flex 
             direction={{ base: "column", md: "row" }}
             gap={{base: '24px', md: '40px'}}
-            py={'64px'}
+            py={{base: '32px', md: '64px', lg: '96px'}}
             align={{base: 'flex-start', md: "center"}}
             justify="center"
             position={'relative'}

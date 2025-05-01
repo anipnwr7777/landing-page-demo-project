@@ -25,7 +25,7 @@ const OrgScroll = () => {
             width={'100%'}
             align={'center'}
             gap={'32px'}
-            py={{base: '32px', md: '64px'}}
+            py={{base: '32px', md: '64px', lg: '96px'}}
         >
             <Show above="md">
                 <Text align={'center'} variant={'lead'}>
