@@ -7,8 +7,6 @@ import reviewsNavIcon from "../assets/svg/reviews-nav-icon.svg"
 import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
 import hamburgerIcon from "../assets/svg/hamburger.svg"
 
-// nav
-
 const NavItem = ({iconSrc, name}) => {
     return (
         <Flex gap={'12px'}>
