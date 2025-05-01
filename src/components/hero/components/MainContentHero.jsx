@@ -16,7 +16,7 @@ import CTAButton from "../../common/CTAButton"
 const Usps = ({ iconSrc, name }) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={iconSrc} />
+            <Image src={iconSrc} alt={`${name} icon`} />
             <Text>{name}</Text>
         </Flex>
     )
@@ -29,7 +29,7 @@ const MainContentHero = () => {
             alignItems={{ base: 'flex-start', md: 'center' }}
         >
             <Flex gap={'8px'} width={'100%'} justifyContent={'center'} align={'center'}>
-                <Image src={trustedUsers} />
+                <Image src={trustedUsers} alt="Trusted users icon" />
                 <Text align={'center'}>
                     Trusted by 1.5M code Learners
                 </Text>
@@ -46,7 +46,7 @@ const MainContentHero = () => {
                     <Heading align={'center'}>
                         EMPOWER YOUR CODING JOURNEY
                     </Heading>
-                    <Image src={chaiIcon} />
+                    <Image src={chaiIcon} alt="ChaiCode icon" />
                 </Flex>
             </Show>
             <Show below="md">
@@ -101,7 +101,7 @@ const MainContentHero = () => {
                     <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'}/>
                     <Button borderRadius={'24px'} border={'1px solid #FE9332'} padding={0} backgroundColor={'white.0'}>
                         <Flex justifyContent={'center'} alignItems={'center'}>
-                            <Image src={playButton}/>
+                            <Image src={playButton} alt="Play video"/>
                         </Flex>
                     </Button>
                 </Flex>

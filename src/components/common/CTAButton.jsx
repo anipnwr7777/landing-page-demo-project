@@ -10,6 +10,8 @@ const CTAButton = ({url, text}) => {
             color={'white.0'}
             onClick={() => window.location.href = url}
             overflow={'hidden'}
+            aria-label={text}
+            role="link"
         >
             <Flex align={'center'} position={'relative'} gap={'8px'}>
                 <Box
@@ -36,7 +38,11 @@ const CTAButton = ({url, text}) => {
                 <Text>
                     {text}
                 </Text>
-                <Image src={rightArrow} />
+                <Image 
+                    src={rightArrow} 
+                    alt="Right arrow" 
+                    aria-hidden="true"
+                />
             </Flex>
         </Button>
     )

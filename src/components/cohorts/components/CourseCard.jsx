@@ -20,21 +20,37 @@ const CourseCard = () => {
             direction={'column'}
             gap={'24px'}
         >
-            <Image src={buyCohort} />
+            <Image 
+                src={buyCohort} 
+                alt="Course thumbnail" 
+                loading="lazy"
+            />
             <Flex gap={'12px'} flexDirection={'column'}>
                 <Flex justifyContent={'space-between'}>
                     <Flex gap={'16px'}>
                         <Flex gap={'12px'}>
-                            <Image src={calendarIcon} />
+                            <Image 
+                                src={calendarIcon} 
+                                alt="Calendar icon" 
+                                loading="lazy"
+                            />
                             <Text variant={'token'}>Starts April 12, 2025</Text>
                         </Flex>
                         <Flex gap={'12px'}>
-                            <Image src={timeIcon} />
+                            <Image 
+                                src={timeIcon} 
+                                alt="Time icon" 
+                                loading="lazy"
+                            />
                             <Text variant={'token'}>6 months</Text>
                         </Flex>
                     </Flex>
                     <Flex gap={'12px'}>
-                        <Image src={calendarIcon} />
+                        <Image 
+                            src={calendarIcon} 
+                            alt="Live session icon" 
+                            loading="lazy"
+                        />
                         <Text variant={'token'}>Live</Text>
                     </Flex>
                 </Flex>

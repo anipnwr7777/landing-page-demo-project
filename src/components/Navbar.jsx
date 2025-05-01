@@ -10,7 +10,7 @@ import hamburgerIcon from "../assets/svg/hamburger.svg"
 const NavItem = ({iconSrc, name}) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={iconSrc}/>
+            <Image src={iconSrc} alt={`${name} navigation icon`}/>
             <Text size={'12px'} color={'black'}>{name}</Text>
         </Flex>
     )
@@ -55,6 +55,7 @@ const Navbar = () => {
                     src={chaiCodeNavbarLogo}
                     height={'32px'}
                     width={'142px'}
+                    alt="ChaiCode Logo"
                 />
                 <Show above="md">
                     <Flex
@@ -82,6 +83,7 @@ const Navbar = () => {
                             width={'24px'} 
                             height={'24px'} 
                             cursor={'pointer'}
+                            alt="Menu"
                         />
                     </Hide>
                 </Flex>

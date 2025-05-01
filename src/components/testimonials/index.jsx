@@ -45,18 +45,18 @@ const TestimonialCard = ({ data }) => {
             gap={'24px'}
             align={'flex-start'}
         >
-            <Image src={quoteIcon} />
+            <Image src={quoteIcon} alt="Quote" />
             <Text variant={'p-ui'}>{'"Thanks to Chaicode, I was able to enhance my coding skills significantly! I used to struggle with building landing pages, but now I can create stunning designs in just a few hours. The resources provided made it easy to learn and implement new technologies like React and Tailwind CSS. I highly recommend it to anyone looking to level up their coding game!"'}
             </Text>
             <Flex align={'flex-end'} justifyContent={'space-between'} width={'100%'}>
                 <Flex gap={'16px'}>
-                    <Image src={roosterIcon}/>
+                    <Image src={roosterIcon} alt="User avatar"/>
                     <Flex flexDirection={'column'}>
                         <Text variant={'p-ui'}>Rooster Babu</Text>
                         <Text variant={'detail'}>@roosterraj</Text>
                     </Flex>
                 </Flex>
-                <Image src={microsoftIcon} height={'50%'} maxWidth={'30%'}/>
+                <Image src={microsoftIcon} height={'50%'} maxWidth={'30%'} alt="Microsoft logo"/>
             </Flex>
         </Flex>
     )
@@ -112,7 +112,7 @@ const Testimonials = () => {
             />
             <Flex flexDirection={'column'} gap={'16px'} width={'100%'} maxWidth={'439px'}>
                 <Flex gap={'8px'}>
-                    <Image src={trustedUsers} />
+                    <Image src={trustedUsers} alt="Trusted users icon" />
                     <Text variant={'p'}>
                         Testimonials
                     </Text>
@@ -136,18 +136,28 @@ const Testimonials = () => {
                         onClick={handlePrev}
                         isDisabled={currentIndex === 0}
                         variant={'unstyled'}
+                        aria-label="View previous testimonial"
                     >
                         <Flex border={'1px solid #A0AEC0'} borderRadius={'24px'} align={'center'} justify={'center'} height={'24px'} width={'24px'} padding={'4px'} background={'rgba(255, 255, 255, 0.64)'}>
-                            <Image src={leftIcon} />
+                            <Image 
+                                src={leftIcon} 
+                                alt="Previous testimonial" 
+                                loading="lazy"
+                            />
                         </Flex>
                     </Button>
                     <Button
                         onClick={handleNext}
                         isDisabled={currentIndex === testimonialData.length - 1}
                         variant={'unstyled'}
+                        aria-label="View next testimonial"
                     >
                         <Flex border={'1px solid #A0AEC0'} borderRadius={'24px'} align={'center'} justify={'center'} height={'24px'} width={'24px'} padding={'4px'} background={'rgba(255, 255, 255, 0.64)'} zIndex={'2'}>
-                            <Image src={rightIcon} />
+                            <Image 
+                                src={rightIcon} 
+                                alt="Next testimonial" 
+                                loading="lazy"
+                            />
                         </Flex>
                     </Button>
                 </Flex>
@@ -167,6 +177,8 @@ const Testimonials = () => {
                             transform={currentIndex === index ? 'scale(1)' : 'scale(0.95)'}
                             transition="all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)"
                             width={'100%'}
+                            role="article"
+                            aria-label={`Testimonial from ${testimonial.name}`}
                         >
                             <TestimonialCard data={testimonial} />
                         </Flex>

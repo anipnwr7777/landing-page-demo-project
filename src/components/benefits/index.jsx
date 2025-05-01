@@ -18,7 +18,7 @@ const BenefitCard = ({ icon, title, description }) => (
         marginBottom={'-1px'}
     >
         <Box width={'48px'} height={'48px'}>
-            <Image src={icon} />
+            <Image src={icon} alt={`${title} icon`} />
         </Box>
         <Flex gap={'8px'} flexDirection={'column'} align={{base: 'flex-start', md: 'center'}}>
             <Text variant={'large'}>
