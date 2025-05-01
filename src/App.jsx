@@ -2,33 +2,38 @@ import { Box, Flex, Image } from "@chakra-ui/react"
 import Navbar from "./components/Navbar"
 import BodyContent from "./components/BodyContent"
 import bgVector from "./assets/svg/bg-vector.svg"
+import Footer from "./components/Footer"
 
 const App = () => {
 	return (
-		<Flex
-			flexDirection={'column'}
-			alignItems={{ base: 'flex-start', md: 'center' }}
-		>
-			<Box
-				position={'absolute'}
-				top={0}
-				left={0}
-				height={'150vh'}
-				width={'100vw'}
-				overflow={'hidden'}
+		<main>
+			<Flex
+				flexDirection={'column'}
+				alignItems={{ base: 'flex-start', md: 'center' }}
 			>
-				<Image
+				<Box
 					position={'absolute'}
-					src={bgVector}
-					width={'180%'}
-					height={'180%'}
-					objectFit={'cover'}
-					top={'-200px'}
-				/>
-			</Box>
-			<Navbar />
-			<BodyContent />
-		</Flex>
+					top={0}
+					left={0}
+					height={'150vh'}
+					width={'100vw'}
+					overflow={'hidden'}
+					zIndex={-1}
+				>
+					<Image
+						position={'absolute'}
+						src={bgVector}
+						width={'180%'}
+						height={'180%'}
+						objectFit={'cover'}
+						top={'-200px'}
+					/>
+				</Box>
+				<Navbar />
+				<BodyContent />
+				<Footer />
+			</Flex>
+		</main>
 	)
 }
 
