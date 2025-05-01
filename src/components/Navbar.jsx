@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Show, Hide, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Show, Hide, Text, Drawer, DrawerBody, DrawerOverlay, DrawerContent, DrawerHeader, IconButton } from "@chakra-ui/react"
 import { useState, useEffect } from "react"
 import chaiCodeNavbarLogo from "../assets/svg/chaicode-nav-logo.svg"
 import cohortNavIcon from "../assets/svg/cohorts-nav-icon.svg"
@@ -10,7 +10,7 @@ import hamburgerIcon from "../assets/svg/hamburger.svg"
 const NavItem = ({iconSrc, name}) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={iconSrc} alt={`${name} navigation icon`}/>
+            <Image src={iconSrc} alt={`${name} navigation icon`} height={'24px'} width={'24px'}/>
             <Text size={'12px'} color={'black'}>{name}</Text>
         </Flex>
     )
@@ -18,6 +18,7 @@ const NavItem = ({iconSrc, name}) => {
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,6 +32,9 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const handleDrawerOpen = () => setIsDrawerOpen(true);
+    const handleDrawerClose = () => setIsDrawerOpen(false);
 
     return (
         <Flex
@@ -84,10 +88,60 @@ const Navbar = () => {
                             height={'24px'} 
                             cursor={'pointer'}
                             alt="Menu"
+                            onClick={handleDrawerOpen}
                         />
                     </Hide>
                 </Flex>
             </Flex>
+
+            <Drawer
+                isOpen={isDrawerOpen}
+                placement="right"
+                onClose={handleDrawerClose}
+                size="full"
+            >
+                <DrawerOverlay />
+                <DrawerContent>
+                    <DrawerHeader
+                        p="16px"
+                        borderBottomWidth="1px"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="space-between"
+                        bg={'white'}
+                    >
+                        <IconButton
+                            variant="ghost"
+                            onClick={handleDrawerClose}
+                            icon={
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            }
+                            aria-label="Close menu"
+                        />
+                    </DrawerHeader>
+                    <DrawerBody p={0}>
+                        <Flex
+                            height="100%"
+                            width="100%"
+                            flexDirection="column"
+                            bg="white"
+                        >
+                            <Flex
+                                flexDirection="column"
+                                gap="32px"
+                                p="24px"
+                            >
+                                <NavItem iconSrc={cohortNavIcon} name="Cohorts" />
+                                <NavItem iconSrc={docsNavIcon} name="Docs" />
+                                <NavItem iconSrc={reviewsNavIcon} name="Reviews" />
+                                <NavItem iconSrc={udemyNavIcon} name="Udemy" />
+                            </Flex>
+                        </Flex>
+                    </DrawerBody>
+                </DrawerContent>
+            </Drawer>
         </Flex>
     )
 }
