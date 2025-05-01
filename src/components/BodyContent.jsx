@@ -10,6 +10,7 @@ import ButWhyChaiCode from "./why-chai-code"
 import Community from "./community"
 import AppDownload from "./app-download"
 import TopicCloud from "./topic-cloud"
+import APIHub from "./api-hub"
 
 const BodyContent = () => {
     return (
@@ -30,6 +31,7 @@ const BodyContent = () => {
                 <ButWhyChaiCode />
                 <TopicCloud />
                 <Community />
+                <APIHub />
                 <AppDownload />
             </Flex>
         </Flex>

@@ -11,7 +11,7 @@ import hiteshImage from "../../../assets/webp/image_hitesh.webp"
 const points = [
     {
         icon: yt,
-        text: 'full timeYouTuber & 2 YT channels (950k & 470k)'
+        text: 'Full time YouTuber & 2 YT channels (950k & 470k)'
     },
     {
         icon: star,
