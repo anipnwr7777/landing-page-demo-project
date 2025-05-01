@@ -54,6 +54,13 @@ const text = defineStyleConfig({
             lineHeight: 'detail',
             color: '#808080',
             fontWeight: 500
+        },
+        'large': {
+            fontSize: 'large',
+            letterSpacing: 'large',
+            lineHeight: 'large',
+            color: '#18181B',
+            fontWeight: 600
         }
     },
     defaultProps: {

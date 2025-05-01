@@ -4,6 +4,7 @@ import OrgScroll from "./orgScroll"
 import TweetLove from "./tweet-love"
 import Cohorts from "./cohorts"
 import Testimonials from "./testimonials"
+import Benefits from "./benefits"
 
 const BodyContent = () => {
     return (
@@ -20,6 +21,7 @@ const BodyContent = () => {
                 <TweetLove />
                 <Cohorts />
                 <Testimonials />
+                <Benefits />
             </Flex>
         </Flex>
     )
