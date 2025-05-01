@@ -13,10 +13,10 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import chartIcon from '../../../assets/lottie/chart.lottie'
 import CTAButton from "../../common/CTAButton"
 
-const Usps = ({ iconSrc, name }) => {
+const Usps = ({ iconSrc, name, alt }) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={iconSrc} alt={`${name} icon`} />
+            <Image src={iconSrc} alt={alt} />
             <Text>{name}</Text>
         </Flex>
     )
@@ -29,7 +29,7 @@ const MainContentHero = () => {
             alignItems={{ base: 'flex-start', md: 'center' }}
         >
             <Flex gap={'8px'} width={'100%'} justifyContent={'center'} align={'center'}>
-                <Image src={trustedUsers} alt="Trusted users icon" />
+                <Image src={trustedUsers} alt="An Icon: trusted users badge" />
                 <Text align={'center'}>
                     Trusted by 1.5M code Learners
                 </Text>
@@ -46,7 +46,7 @@ const MainContentHero = () => {
                     <Heading align={'center'}>
                         EMPOWER YOUR CODING JOURNEY
                     </Heading>
-                    <Image src={chaiIcon} alt="ChaiCode icon" />
+                    <Image src={chaiIcon} alt="An Icon: ChaiCode brand symbol" />
                 </Flex>
             </Show>
             <Show below="md">
@@ -68,40 +68,40 @@ const MainContentHero = () => {
                 <Show above="md">
                     <Flex flexDirection={'column'} alignItems={'center'}>
                         <Flex gap={'24px'} alignItems={'center'}>
-                            <Usps iconSrc={bounties} name="Bounties" />
-                            <Usps iconSrc={peerLearning} name="Peer Learning" />
-                            <Usps iconSrc={codeReviews} name="Code Reviews" />
-                            <Usps iconSrc={virtualHostel} name="Virtual Hostel" />
+                            <Usps iconSrc={bounties} name="Bounties" alt="An Icon: rewards and bounties feature" />
+                            <Usps iconSrc={peerLearning} name="Peer Learning" alt="An Icon: collaborative learning feature" />
+                            <Usps iconSrc={codeReviews} name="Code Reviews" alt="An Icon: code review process" />
+                            <Usps iconSrc={virtualHostel} name="Virtual Hostel" alt="An Icon: virtual community space" />
                         </Flex>
                         <Flex gap={'24px'} mt={'24px'} alignItems={'center'}>
-                            <Usps iconSrc={alumniNetwork} name="Alumni Network" />
-                            <Usps iconSrc={doubtSession} name="Doubt Sessions" />
-                            <Usps iconSrc={groupProjects} name="Group Projects" />
+                            <Usps iconSrc={alumniNetwork} name="Alumni Network" alt="An Icon: graduate connection network" />
+                            <Usps iconSrc={doubtSession} name="Doubt Sessions" alt="An Icon: question and answer sessions" />
+                            <Usps iconSrc={groupProjects} name="Group Projects" alt="An Icon: collaborative project work" />
                         </Flex>
                     </Flex>
                 </Show>
                 <Show below="md">
                     <Flex flexDirection={'column'} alignItems={'flex-start'} gap={'16px'}>
                         <Flex gap={'24px'} alignItems={'flex-start'}>
-                            <Usps iconSrc={bounties} name="Bounties" />
-                            <Usps iconSrc={peerLearning} name="Peer Learning" />
+                            <Usps iconSrc={bounties} name="Bounties" alt="An Icon: rewards and bounties feature" />
+                            <Usps iconSrc={peerLearning} name="Peer Learning" alt="An Icon: collaborative learning feature" />
                         </Flex>
                         <Flex gap={'24px'} alignItems={'flex-start'}>
-                            <Usps iconSrc={codeReviews} name="Code Reviews" />
-                            <Usps iconSrc={virtualHostel} name="Virtual Hostel" />
+                            <Usps iconSrc={codeReviews} name="Code Reviews" alt="An Icon: code review process" />
+                            <Usps iconSrc={virtualHostel} name="Virtual Hostel" alt="An Icon: virtual community space" />
                         </Flex>
                         <Flex gap={'24px'} alignItems={'flex-start'}>
-                            <Usps iconSrc={alumniNetwork} name="Alumni Network" />
-                            <Usps iconSrc={doubtSession} name="Doubt Sessions" />
+                            <Usps iconSrc={alumniNetwork} name="Alumni Network" alt="An Icon: graduate connection network" />
+                            <Usps iconSrc={doubtSession} name="Doubt Sessions" alt="An Icon: question and answer sessions" />
                         </Flex>
-                        <Usps iconSrc={groupProjects} name="Group Projects" />
+                        <Usps iconSrc={groupProjects} name="Group Projects" alt="An Icon: collaborative project work" />
                     </Flex>
                 </Show>
                 <Flex gap={'16px'}>
                     <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'}/>
                     <Button borderRadius={'24px'} border={'1px solid #FE9332'} padding={0} backgroundColor={'white.0'}>
                         <Flex justifyContent={'center'} alignItems={'center'}>
-                            <Image src={playButton} alt="Play video"/>
+                            <Image src={playButton} alt="An Icon: video play control button"/>
                         </Flex>
                     </Button>
                 </Flex>

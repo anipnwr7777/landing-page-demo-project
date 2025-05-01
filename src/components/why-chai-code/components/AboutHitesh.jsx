@@ -30,7 +30,7 @@ const points = [
 const Point = ({ icon, text }) => {
     return (
         <Flex gap={'16px'} align={'center'}>
-            <Image src={icon} width={'32px'} height={'32px'} />
+            <Image src={icon} width={'32px'} height={'32px'} alt={`An Icon: ${text} feature illustration`} />
             <Text variant={'p-ui'}>{text}</Text>
         </Flex>
     )
@@ -48,7 +48,7 @@ const AboutHitesh = () => {
                 background={'rgba(254, 147, 50, 0.04)'}
                 borderRadius={'12px'}
             >
-                <Image src={hiteshImage} />
+                <Image src={hiteshImage} alt="A photograph: Hitesh Choudhary, founder of ChaiCode" />
                 <Flex flexDirection={'column'} gap={'24px'}>
                     <Flex
                         flexDirection={'column'}
@@ -57,8 +57,8 @@ const AboutHitesh = () => {
                         <Flex justify={'space-between'}>
                             <Heading variant={'h3'}>Hitesh Choudhary</Heading>
                             <Flex gap={'16px'}>
-                                <Image src={twitter} height={'32px'} width={'32px'}/>
-                                <Image src={linkedin} height={'32px'} width={'32px'}/>
+                                <Image src={twitter} height={'32px'} width={'32px'} alt="An Icon: Twitter social media profile" />
+                                <Image src={linkedin} height={'32px'} width={'32px'} alt="An Icon: LinkedIn professional network profile" />
                             </Flex>
                         </Flex>
                         <Flex flexDirection={'column'} gap={'16px'}>
@@ -75,7 +75,7 @@ const AboutHitesh = () => {
                             }
                         </Flex>
                     </Flex>
-                    <Image src={divider} />
+                    <Image src={divider} alt="An Icon: decorative section divider" />
                     <Flex gap={'16px'} flexDirection={'column'}>
                         <Text variant={'large'}>
                             Approach

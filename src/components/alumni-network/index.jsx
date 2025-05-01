@@ -23,7 +23,7 @@ const points = [
 const Point = ({ icon, text }) => {
     return (
         <Flex gap={'16px'} align={'center'}>
-            <Image src={icon} width={'32px'} height={'32px'}/>
+            <Image src={icon} width={'32px'} height={'32px'} alt={`An Icon: ${text} alumni feature`}/>
             <Text variant={'p-ui'}>{text}</Text>
         </Flex>
     )

@@ -7,10 +7,12 @@ import reviewsNavIcon from "../assets/svg/reviews-nav-icon.svg"
 import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
 import hamburgerIcon from "../assets/svg/hamburger.svg"
 
+// nav
+
 const NavItem = ({iconSrc, name}) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={iconSrc} alt={`${name} navigation icon`} height={'24px'} width={'24px'}/>
+            <Image src={iconSrc} alt={`An Icon: ${name} navigation item`} height={'24px'} width={'24px'}/>
             <Text size={'12px'} color={'black'}>{name}</Text>
         </Flex>
     )
@@ -87,8 +89,8 @@ const Navbar = () => {
                             width={'24px'} 
                             height={'24px'} 
                             cursor={'pointer'}
-                            alt="Menu"
                             onClick={handleDrawerOpen}
+                            alt="An Icon: menu toggle button"
                         />
                     </Hide>
                 </Flex>

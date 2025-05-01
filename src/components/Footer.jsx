@@ -21,7 +21,7 @@ import refund from "../assets/svg/refund.svg"
 const Item = ({icon, text}) => {
     return (
         <Flex gap={'12px'}>
-            <Image src={icon} height={'24px'} width={'24px'}/>
+            <Image src={icon} height={'24px'} width={'24px'} alt={`An Icon: ${text} navigation item`}/>
             <Text color={'#ffffff'}>{text}</Text>
         </Flex>
     )
@@ -44,30 +44,30 @@ const Footer = () => {
             >
 
                 <Flex flexDirection={'column'} justify={'space-between'} mb={{base: '32px', md: '0px'}}>
-                    <Image src={chaiLogo} height={'32px'} width={'142px'} />
+                    <Image src={chaiLogo} height={'32px'} width={'142px'} alt="An Icon: ChaiCode logo in white" />
                     <Show above="md">
                         <Flex flexDirection={'column'} gap={'16px'}>
                             <Flex gap={'12px'}>
                                 <Link href="https://discord.gg/chaicode" isExternal>
-                                    <Image src={discordIcon} alt="Discord" width="24px" height="24px" />
+                                    <Image src={discordIcon} alt="An Icon: Discord social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://twitter.com/chaicode" isExternal>
-                                    <Image src={twitterIcon} alt="Twitter" width="24px" height="24px" />
+                                    <Image src={twitterIcon} alt="An Icon: Twitter social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://instagram.com/chaicode" isExternal>
-                                    <Image src={instagramIcon} alt="Instagram" width="24px" height="24px" />
+                                    <Image src={instagramIcon} alt="An Icon: Instagram social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://facebook.com/chaicode" isExternal>
-                                    <Image src={facebookIcon} alt="Facebook" width="24px" height="24px" />
+                                    <Image src={facebookIcon} alt="An Icon: Facebook social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://linkedin.com/company/chaicode" isExternal>
-                                    <Image src={linkedinIcon} alt="LinkedIn" width="24px" height="24px" />
+                                    <Image src={linkedinIcon} alt="An Icon: LinkedIn professional network" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://github.com/chaicode" isExternal>
-                                    <Image src={githubIcon} alt="GitHub" width="24px" height="24px" />
+                                    <Image src={githubIcon} alt="An Icon: GitHub code repository" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://youtube.com/@chaicode" isExternal>
-                                    <Image src={youtubeIcon} alt="YouTube" width="24px" height="24px" />
+                                    <Image src={youtubeIcon} alt="An Icon: YouTube video platform" width="24px" height="24px" />
                                 </Link>
                             </Flex>
                             <Flex>
@@ -129,25 +129,25 @@ const Footer = () => {
                         <Flex flexDirection={'column'} gap={'16px'}>
                             <Flex gap={'12px'}>
                                 <Link href="https://discord.gg/chaicode" isExternal>
-                                    <Image src={discordIcon} alt="Discord" width="24px" height="24px" />
+                                    <Image src={discordIcon} alt="An Icon: Discord social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://twitter.com/chaicode" isExternal>
-                                    <Image src={twitterIcon} alt="Twitter" width="24px" height="24px" />
+                                    <Image src={twitterIcon} alt="An Icon: Twitter social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://instagram.com/chaicode" isExternal>
-                                    <Image src={instagramIcon} alt="Instagram" width="24px" height="24px" />
+                                    <Image src={instagramIcon} alt="An Icon: Instagram social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://facebook.com/chaicode" isExternal>
-                                    <Image src={facebookIcon} alt="Facebook" width="24px" height="24px" />
+                                    <Image src={facebookIcon} alt="An Icon: Facebook social platform" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://linkedin.com/company/chaicode" isExternal>
-                                    <Image src={linkedinIcon} alt="LinkedIn" width="24px" height="24px" />
+                                    <Image src={linkedinIcon} alt="An Icon: LinkedIn professional network" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://github.com/chaicode" isExternal>
-                                    <Image src={githubIcon} alt="GitHub" width="24px" height="24px" />
+                                    <Image src={githubIcon} alt="An Icon: GitHub code repository" width="24px" height="24px" />
                                 </Link>
                                 <Link href="https://youtube.com/@chaicode" isExternal>
-                                    <Image src={youtubeIcon} alt="YouTube" width="24px" height="24px" />
+                                    <Image src={youtubeIcon} alt="An Icon: YouTube video platform" width="24px" height="24px" />
                                 </Link>
                             </Flex>
                             <Flex>

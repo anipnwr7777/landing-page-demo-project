@@ -27,6 +27,8 @@ const App = () => {
 						height={'180%'}
 						objectFit={'cover'}
 						top={'-200px'}
+						loading="lazy"
+						alt="An Image: decorative background pattern"
 					/>
 				</Box>
 				<Navbar />

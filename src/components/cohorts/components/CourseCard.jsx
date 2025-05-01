@@ -22,7 +22,7 @@ const CourseCard = () => {
         >
             <Image 
                 src={buyCohort} 
-                alt="Course thumbnail" 
+                alt="An Image: course content thumbnail" 
                 loading="lazy"
             />
             <Flex gap={'12px'} flexDirection={'column'}>
@@ -31,7 +31,7 @@ const CourseCard = () => {
                         <Flex gap={'12px'}>
                             <Image 
                                 src={calendarIcon} 
-                                alt="Calendar icon" 
+                                alt="An Icon: calendar showing course schedule" 
                                 loading="lazy"
                             />
                             <Text variant={'token'}>Starts April 12, 2025</Text>
@@ -39,7 +39,7 @@ const CourseCard = () => {
                         <Flex gap={'12px'}>
                             <Image 
                                 src={timeIcon} 
-                                alt="Time icon" 
+                                alt="An Icon: clock showing course duration" 
                                 loading="lazy"
                             />
                             <Text variant={'token'}>6 months</Text>
@@ -48,7 +48,7 @@ const CourseCard = () => {
                     <Flex gap={'12px'}>
                         <Image 
                             src={calendarIcon} 
-                            alt="Live session icon" 
+                            alt="An Icon: live session schedule indicator" 
                             loading="lazy"
                         />
                         <Text variant={'token'}>Live</Text>

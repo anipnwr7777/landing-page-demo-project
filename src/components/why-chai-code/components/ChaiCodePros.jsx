@@ -43,7 +43,12 @@ const points = [
 const ChaiCodePro = ({ icon, heading, content }) => {
     return (
         <Flex gap={'16px'} paddingY={'24px'} borderBottom={'1px dashed #CCC'}>
-            <Image src={icon} height={'32px'} width={'32px'} />
+            <Image 
+                src={icon} 
+                height={'32px'} 
+                width={'32px'} 
+                alt={`An Icon: ${heading} feature illustration`}
+            />
             <Flex gap={'8px'} flexDirection={'column'}>
                 <Text variant={'large'}>
                     {heading}

@@ -12,7 +12,14 @@ import spotify from '../../assets/svg/spotify.svg';
 const Logo = ({ src }) => {
     return (
         <Flex width={'160px'} height={'48px'} alignItems={'center'} justifyContent={'center'} mx={'20px'}>
-            <Image src={src} maxHeight={'32px'} objectFit={'contain'} alt={`Company logo`} />
+            <Image 
+                src={src} 
+                maxHeight={'32px'} 
+                width="auto" 
+                height="32px" 
+                objectFit={'contain'} 
+                alt={`An Icon: partner company logo`} 
+            />
         </Flex>
     )
 }

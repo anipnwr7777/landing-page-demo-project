@@ -21,7 +21,7 @@ const ButWhyChaiCode = () => {
                     <Show below="md">
                         <Heading variant={'h2'} align={'left'} sx={{ whiteSpace: 'nowrap' }}>But Why ChaiCode?</Heading>
                     </Show>
-                    <Image src={chaiIcon} height={'40px'} width={'45px'}></Image>
+                    <Image src={chaiIcon} height={'40px'} width={'45px'} alt="An Icon: chai cup symbolizing the brand"></Image>
                 </Flex>
                 <Text variant={'p'}>
                     ChaiCode exists because we love tech and teaching
