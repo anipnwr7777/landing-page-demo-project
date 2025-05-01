@@ -8,6 +8,7 @@ import Benefits from "./benefits"
 import AlumniNetwork from "./alumni-network"
 import ButWhyChaiCode from "./why-chai-code"
 import Community from "./community"
+import AppDownload from "./app-download"
 
 const BodyContent = () => {
     return (
@@ -27,6 +28,7 @@ const BodyContent = () => {
                 <AlumniNetwork />
                 <ButWhyChaiCode />
                 <Community />
+                <AppDownload />
             </Flex>
         </Flex>
     )
