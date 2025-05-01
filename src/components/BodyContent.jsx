@@ -6,6 +6,7 @@ import Cohorts from "./cohorts"
 import Testimonials from "./testimonials"
 import Benefits from "./benefits"
 import AlumniNetwork from "./alumni-network"
+import ButWhyChaiCode from "./why-chai-code"
 
 const BodyContent = () => {
     return (
@@ -24,6 +25,7 @@ const BodyContent = () => {
                 <Testimonials />
                 <Benefits />
                 <AlumniNetwork />
+                <ButWhyChaiCode />
             </Flex>
         </Flex>
     )
