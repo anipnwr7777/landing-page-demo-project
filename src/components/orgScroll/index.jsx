@@ -15,8 +15,6 @@ const Logo = ({ src }) => {
             <Image 
                 src={src} 
                 maxHeight={'32px'} 
-                width="auto" 
-                height="32px" 
                 objectFit={'contain'} 
                 alt={`An Icon: partner company logo`} 
             />
