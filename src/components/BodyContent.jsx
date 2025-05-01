@@ -11,6 +11,7 @@ import Community from "./community"
 import AppDownload from "./app-download"
 import TopicCloud from "./topic-cloud"
 import APIHub from "./api-hub"
+import Udemy from "./udemy"
 
 const BodyContent = () => {
     return (
@@ -26,6 +27,7 @@ const BodyContent = () => {
                 <TweetLove />
                 <Cohorts />
                 <Testimonials />
+                <Udemy />
                 <Benefits />
                 <AlumniNetwork />
                 <ButWhyChaiCode />
