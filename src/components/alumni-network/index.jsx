@@ -58,6 +58,7 @@ const AlumniNetwork = () => {
                         points.map((point) => {
                             return (
                                 <Point
+                                    key={point.text}
                                     icon={point.icon}
                                     text={point.text}
                                 />
