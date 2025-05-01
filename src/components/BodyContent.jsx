@@ -5,6 +5,7 @@ import TweetLove from "./tweet-love"
 import Cohorts from "./cohorts"
 import Testimonials from "./testimonials"
 import Benefits from "./benefits"
+import AlumniNetwork from "./alumni-network"
 
 const BodyContent = () => {
     return (
@@ -22,6 +23,7 @@ const BodyContent = () => {
                 <Cohorts />
                 <Testimonials />
                 <Benefits />
+                <AlumniNetwork />
             </Flex>
         </Flex>
     )
