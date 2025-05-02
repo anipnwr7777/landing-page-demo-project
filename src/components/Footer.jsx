@@ -18,12 +18,14 @@ import terms from "../assets/svg/terms-of-service.svg"
 import price from "../assets/svg/price.svg"
 import refund from "../assets/svg/refund.svg"
 
-const Item = ({icon, text}) => {
+const Item = ({icon, text, href}) => {
     return (
-        <Flex gap={'12px'}>
-            <Image src={icon} height={'24px'} width={'24px'} alt={`An Icon: ${text} navigation item`}/>
-            <Text color={'#ffffff'}>{text}</Text>
-        </Flex>
+        <Link href={href} isExternal>
+            <Flex gap={'12px'}>
+                <Image src={icon} height={'24px'} width={'24px'} alt={`An Icon: ${text} navigation item`}/>
+                <Text color={'#ffffff'}>{text}</Text>
+            </Flex>
+        </Link>
     )
 }
 
@@ -79,22 +81,27 @@ const Footer = () => {
                         <Item 
                             icon={programming}
                             text={'Courses'}
+                            href={'https://courses.chaicode.com/learn'}
                         />
                         <Item 
                             icon={coding}
                             text={'Cohorts'}
+                            href={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
                         />
                         <Item 
                             icon={win}
                             text={'Coding Hero'}
+                            href={'https://courses.chaicode.com/learn/batch/about?bundleId=226894'}
                         />
                         <Item 
                             icon={connect}
                             text={'Free API'}
+                            href={'https://freeapi.app/'}
                         />
                         <Item 
                             icon={master}
                             text={'Masterji'}
+                            href={'https://masterji.co/login'}
                         />
                     </Flex>
                     <Flex flexDirection={'column'} gap={'16px'}>
@@ -102,22 +109,27 @@ const Footer = () => {
                         <Item 
                             icon={docs}
                             text={'Docs'}
+                            href={'https://docs.chaicode.com/'}
                         />
                         <Item 
                             icon={policy}
                             text={'Privacy Policy'}
+                            href={'https://www.chaicode.com/privacy-policy'}
                         />
                         <Item 
                             icon={terms}
                             text={'Terms of Service'}
+                            href={'https://www.chaicode.com/terms-of-services'}
                         />
                         <Item 
                             icon={price}
                             text={'Pricing Policy'}
+                            href={'https://www.chaicode.com/pricing-policy'}
                         />
                         <Item 
                             icon={refund}
                             text={'Refund Policy'}
+                            href={'https://www.chaicode.com/refund-policy'}
                         />
                     </Flex>
                 </Flex>
