@@ -207,7 +207,16 @@ const Udemy = () => {
                         ))}
                     </Flex>
                 </Flex>
-                <Button border={'1px solid #FF7D0C'} bg={'#ffffff'} borderRadius={'4px'} py={'12px'} px={'30px'} mt={'16px'} _hover={{ backgroundColor: '#FF7D0C', color: 'white', cursor: 'pointer' }}>
+                <Button 
+                    border={'1px solid #FF7D0C'} 
+                    bg={'#ffffff'} 
+                    borderRadius={'4px'} 
+                    py={'12px'} 
+                    px={'30px'} 
+                    mt={'16px'} 
+                    _hover={{ backgroundColor: '#FF7D0C', color: 'white', cursor: 'pointer' }}
+                    onClick={() => window.open('https://www.udemy.com/user/hitesh-choudharycom/?srsltid=AfmBOoqvSTWjJXbrEkp3Esy31kQf9VaJXQ5yisRcBFdwrDLSXE8hH3re', '_blank')}
+                >
                     <Text color={'#FE9332'} fontWeight={'700'} _hover={{ color: 'white' }}>
                         View All Courses on Udemy
                     </Text>
