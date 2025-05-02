@@ -1,4 +1,5 @@
 import { Flex, Heading, Image, Show, Text, Box, Button } from "@chakra-ui/react"
+import { useState } from "react"
 import trustedUsers from "../../../assets/svg/trusted-users.svg"
 import bounties from "../../../assets/svg/bounties.svg"
 import peerLearning from "../../../assets/svg/peer-learning.svg"
@@ -8,6 +9,7 @@ import doubtSession from "../../../assets/svg/doubt-session.svg"
 import groupProjects from "../../../assets/svg/group-projects.svg"
 import virtualHostel from "../../../assets/svg/virtual-hostel.svg"
 import playButton from "../../../assets/svg/play-button.svg"
+import playButtonWhite from "../../../assets/svg/playbutton-white.svg"
 import chaiIcon from "../../../assets/svg/chai-icon.svg"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import chartIcon from '../../../assets/lottie/chart.lottie'
@@ -23,6 +25,8 @@ const Usps = ({ iconSrc, name, alt }) => {
 }
 
 const MainContentHero = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <Flex
             flexDirection={'column'}
@@ -99,9 +103,17 @@ const MainContentHero = () => {
                 </Show>
                 <Flex gap={'16px'}>
                     <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'}/>
-                    <Button borderRadius={'24px'} border={'1px solid #FE9332'} padding={0} backgroundColor={'white.0'}>
+                    <Button 
+                        borderRadius={'24px'} 
+                        border={'1px solid #FE9332'} 
+                        padding={0} 
+                        backgroundColor={'white.0'} 
+                        _hover={{ backgroundColor: '#FF7D0C' }}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
                         <Flex justifyContent={'center'} alignItems={'center'}>
-                            <Image src={playButton} alt="An Icon: video play control button"/>
+                            <Image src={isHovered ? playButtonWhite : playButton} alt="An Icon: video play control button"/>
                         </Flex>
                     </Button>
                 </Flex>
