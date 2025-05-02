@@ -1,7 +1,9 @@
-import { Grid, Box } from "@chakra-ui/react"
+import { Grid, Box, useBreakpointValue } from "@chakra-ui/react"
 import CourseCard from "./CourseCard"
 
 const GridLayout = () => {
+    const numberOfCards = useBreakpointValue({ sm: 3, base: 3, md: 6, lg: 6 })
+
     return (
         <Grid
             templateColumns={{
@@ -16,8 +18,7 @@ const GridLayout = () => {
                 md: "center"
             }}
         >
-            {/* Create 6 placeholder boxes */}
-            {[...Array(6)].map((_, index) => (
+            {[...Array(numberOfCards)].map((_, index) => (
                 <Box
                     key={index}
                     height="100%"
