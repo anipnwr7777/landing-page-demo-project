@@ -60,12 +60,12 @@ const MainContentHero = () => {
             </Show>
             <Flex mt={'24px'} gap={'32px'} flexDirection={'column'} alignItems={{ base: 'flex-start', md: 'center' }}>
                 <Show above="md">
-                    <Heading align={'center'} mt={'16px'} variant={'h3'}>
+                    <Heading align={'center'} variant={'h3'}>
                         AN UNMATCHED CODING COURSE EXPERIENCE YOU WON'T FIND ANYWHERE ELSE
                     </Heading>
                 </Show>
                 <Show below="md">
-                    <Heading align={'left'} mt={'16px'} variant={'h3'}>
+                    <Heading align={'left'} variant={'h3'}>
                         AN UNMATCHED CODING COURSE EXPERIENCE YOU WON'T FIND ANYWHERE ELSE
                     </Heading>
                 </Show>
