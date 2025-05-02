@@ -20,7 +20,7 @@ const GridLayout = () => {
             {[...Array(6)].map((_, index) => (
                 <Box
                     key={index}
-                    height="550px"
+                    height="100%"
                     width="100%"
                     // bg="primary"
                     borderRadius="lg"
