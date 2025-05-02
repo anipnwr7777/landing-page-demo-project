@@ -80,7 +80,12 @@ const CourseCard = () => {
                         <Text variant={'body'} textDecoration={'line-through'}>₹ 8,999</Text>
                         <Text variant={'p-ui-medium'}>Save 21%</Text>
                     </Flex>
-                    <Button backgroundColor={'primary'} width={'100%'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
+                    <Button 
+                        backgroundColor={'primary'} 
+                        width={'100%'} 
+                        _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
+                        onClick={() => window.open('https://www.udemy.com/course/web-dev-master/?couponCode=CHAISUMMER1', '_blank')}
+                    >
                         <Text
                             color={'white.0'}
                             fontSize={'16px'}
