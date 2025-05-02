@@ -11,7 +11,18 @@ const Tag = ({ children }) => (
     </Box>
 );
 
-const CourseCard = () => {
+const CourseCard = ({
+    title = 'Full Stack Data Science 1.0',
+    description = 'Explore everything from foundational Python skills to deploying real-world data science projects',
+    discountedPrice = '6,999',
+    originalPrice = '8,999',
+    savePercent = '21%',
+    startDate = 'April 12, 2025',
+    duration = '6 months',
+    icon = buyCohort,
+    tags = ['Python', 'TensorFlow', 'Pandas'],
+    buyNowLink = 'https://courses.chaicode.com/learn/batch/about?bundleId=227817'
+}) => {
     return (
         <Flex
             border={'1px solid #CCC'}
@@ -21,7 +32,7 @@ const CourseCard = () => {
             gap={'24px'}
         >
             <Image 
-                src={buyCohort} 
+                src={icon} 
                 alt="An Image: course content thumbnail" 
                 loading="lazy"
             />
@@ -34,7 +45,7 @@ const CourseCard = () => {
                                 alt="An Icon: calendar showing course schedule" 
                                 loading="lazy"
                             />
-                            <Text variant={'token'}>Starts April 12, 2025</Text>
+                            <Text variant={'token'}>{`Starts ${startDate}`}</Text>
                         </Flex>
                         <Flex gap={'12px'}>
                             <Image 
@@ -42,7 +53,7 @@ const CourseCard = () => {
                                 alt="An Icon: clock showing course duration" 
                                 loading="lazy"
                             />
-                            <Text variant={'token'}>6 months</Text>
+                            <Text variant={'token'}>{duration}</Text>
                         </Flex>
                     </Flex>
                     <Flex gap={'12px'}>
@@ -56,25 +67,36 @@ const CourseCard = () => {
                 </Flex>
                 <Flex flexDirection={'column'} gap={'0.5rem'}>
                     <Heading variant={'h4'}>
-                        Full Stack Data Science 1.0
+                        {title}
                     </Heading>
                     <Text variant={'p-ui'} align={'left'}>
-                        Explore everything from foundational Python skills to deploying real-world data science projects
+                        {description}
                     </Text>
                     <Flex gap={'4px'}>
-                        <Tag>Python</Tag>
-                        <Tag>TensorFlow</Tag>
-                        <Tag>Pandas</Tag>
+                        {
+                            tags.map((tag) =>
+                                <Tag
+                                    key={tag}
+                                >
+                                    {tag}
+                                </Tag>
+                            )
+                        }
                     </Flex>
                 </Flex>
                 <Flex flexDirection={'column'} gap={'16px'}>
                     <Flex gap={'16px'} align={'center'}>
-                        <Heading variant={'h4'}>₹ 6,999</Heading>
-                        <Text variant={'body'} textDecoration={'line-through'}>₹ 8,999</Text>
-                        <Text variant={'p-ui-medium'}>Save 21%</Text>
+                        <Heading variant={'h4'}>{`₹ ${discountedPrice}`}</Heading>
+                        <Text variant={'body'} textDecoration={'line-through'}>{`₹ ${originalPrice}`}</Text>
+                        <Text variant={'p-ui-medium'}>{`Save ${savePercent}`}</Text>
                     </Flex>
-                    <Flex gap={'16px'}>
-                        <Button backgroundColor={'primary'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
+                    <Flex gap={'16px'} width={'100%'}>
+                        <Button 
+                            backgroundColor={'primary'} 
+                            _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }} 
+                            width={'100%'}
+                            onClick={() => window.open(buyNowLink, '_blank')}
+                        >
                             <Text
                                 color={'white.0'}
                                 fontSize={'16px'}
@@ -82,16 +104,6 @@ const CourseCard = () => {
                                 fontWeight={'700'}
                                 lineHeight={'24px'}
                             >Buy Now</Text>
-                        </Button>
-                        <Button backgroundColor={'white.0'} border={'1px solid #FF7D0C'} borderRadius={'4px'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
-                            <Text
-                                color={'primary'}
-                                fontSize={'16px'}
-                                fontFamily={'Public Sans'}
-                                fontWeight={'700'}
-                                lineHeight={'24px'}
-                                _hover={{ color: 'white' }}
-                            >More Details</Text>
                         </Button>
                     </Flex>
                 </Flex>
