@@ -41,7 +41,7 @@ const CourseCard = ({
                 />
                 <Flex gap={'12px'} flexDirection={'column'}>
                     <Flex justifyContent={'space-between'}>
-                        <Flex gap={'16px'}>
+                        {duration !== 'NA' && <Flex gap={'16px'}>
                             <Flex gap={'12px'}>
                                 <Image
                                     src={calendarIcon}
@@ -58,14 +58,14 @@ const CourseCard = ({
                                 />
                                 <Text variant={'token'}>{duration}</Text>
                             </Flex>
-                        </Flex>
+                        </Flex>}
                         <Flex gap={'12px'}>
                             <Image
                                 src={calendarIcon}
                                 alt="An Icon: live session schedule indicator"
                                 loading="lazy"
                             />
-                            <Text variant={'token'}>Live</Text>
+                            <Text variant={'token'}>{duration !== 'NA' ? 'Live' : 'Always Running'}</Text>
                         </Flex>
                     </Flex>
                     <Flex flexDirection={'column'} gap={'0.5rem'}>
