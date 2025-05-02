@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react"
 import device from "../../assets/svg/device.svg"
 import rocket from "../../assets/svg/rocket.svg"
-import buyCohort from "../../assets/webp/buy-cohort.webp"
+import freeAPI from "../../assets/webp/free-api.webp"
 
 const APIHub = () => {
     return (
@@ -16,6 +16,7 @@ const APIHub = () => {
                 p={{ base: '24px', md: '48px' }}
                 gap={'48px'}
                 flexDirection={{base: 'column', lg: 'row'}}
+                align={{base: 'flex-start', md: 'center'}}
             >
                 <Flex flexDir={'column'} gap={'24px'}>
                     <Heading variant={'h2'}>Unlock Your Potential with Our API Hub</Heading>
@@ -47,11 +48,18 @@ const APIHub = () => {
                         </Button>
                     </Box>
                 </Flex>
-                <Image
-                    src={buyCohort}
-                    alt="An Image: course content thumbnail"
-                    loading="lazy"
-                />
+                <Box
+                    maxWidth={'548px'}
+                    maxHeight={'308px'}
+                >
+                    <Image
+                        src={freeAPI}
+                        alt="An Image: course content thumbnail"
+                        loading="lazy"
+                        borderRadius={'12px'}
+
+                    />
+                </Box>
             </Flex>
         </Flex>
     )
