@@ -34,6 +34,15 @@ const TweetLove = () => {
                 height={'100%'}
                 background={'linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0) 100%)'}
             />
+            <Box
+                zIndex={'-1'}
+                position={'absolute'}
+                top={'0'}
+                left={'0'}
+                width={'100%'}
+                height={'100%'}
+                background={'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%)'}
+            />
             <Flex gap={'16px'} alignItems={'center'}>
                 <Box height={'32px'} width={'32px'}>
                     <DotLottieReact
