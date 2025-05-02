@@ -2,6 +2,8 @@ import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import buyCohort from "../../../assets/webp/buy-cohort.webp"
 import calendarIcon from "../../../assets/svg/calendar.svg"
 import timeIcon from "../../../assets/svg/time.svg"
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import liveBlinker from "../../../assets/lottie/live-blinker.lottie"
 
 const Tag = ({ children }) => (
     <Box borderRadius={'9999px'} border={'1px solid #E4E4E7'} px={'10px'} py={'2px'}>
@@ -59,12 +61,19 @@ const CourseCard = ({
                                 <Text variant={'token'}>{duration}</Text>
                             </Flex>
                         </Flex>}
-                        <Flex gap={'12px'}>
-                            <Image
+                        <Flex gap={'12px'} align={'center'}>
+                            {/* <Image
                                 src={calendarIcon}
                                 alt="An Icon: live session schedule indicator"
                                 loading="lazy"
-                            />
+                            /> */}
+                            <Box height={'16px'} width={'16px'}>
+                                <DotLottieReact
+                                    src={liveBlinker}
+                                    loop
+                                    autoplay
+                                />
+                            </Box>
                             <Text variant={'token'}>{duration !== 'NA' ? 'Live' : 'Always Running'}</Text>
                         </Flex>
                     </Flex>
