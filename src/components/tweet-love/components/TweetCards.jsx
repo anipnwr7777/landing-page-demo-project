@@ -35,6 +35,7 @@ const TweetCards = () => {
                     name={'Jaani'}
                     handle={'@jahanweee'}
                     tweetImage={jaaniPayment}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
                     height={'100%'}
@@ -44,6 +45,7 @@ const TweetCards = () => {
                     name={'Hitesh Choudhary'}
                     handle={'@Hiteshdotcom'}
                     tweetImage={hiteshTweet}
+                    tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
                 />
                 <TweetCard
                     height={'100%'}
@@ -53,6 +55,7 @@ const TweetCards = () => {
                     name={'prasenjit basu'}
                     handle={'@prasenjitbasu44'}
                     tweetImage={prasenJit}
+                    tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
                 />
             </Show>
             <Show above="md">
@@ -63,7 +66,8 @@ const TweetCards = () => {
                     icon={twitterAnUser}
                     name={'Jaani'}
                     handle={'@jahanweee'}
-                    tweetImage={jaaniPayment}                    
+                    tweetImage={jaaniPayment}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
                     height={'517px'}
@@ -73,6 +77,7 @@ const TweetCards = () => {
                     name={'Hitesh Choudhary'}
                     handle={'@Hiteshdotcom'}
                     tweetImage={hiteshTweet}
+                    tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
                 />
                 <TweetCard
                     height={'429px'}
@@ -82,6 +87,7 @@ const TweetCards = () => {
                     name={'prasenjit basu'}
                     handle={'@prasenjitbasu44'}
                     tweetImage={prasenJit}
+                    tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
                 />
             </Show>
         </Flex>
