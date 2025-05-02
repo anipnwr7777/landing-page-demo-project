@@ -3,7 +3,7 @@ import { useState, useRef } from "react"
 import udemy from "../../assets/svg/udemy-bg.svg"
 import leftIcon from "../../assets/svg/left-arrow.svg"
 import rightIcon from "../../assets/svg/right-arrow-test.svg"
-import buyCohort from "../../assets/webp/buy-cohort.webp"
+import udemyWebp from "../../assets/webp/udemy.webp"
 import rating from "../../assets/svg/rating.svg"
 
 const courseData = [
@@ -48,7 +48,7 @@ const CourseCard = () => {
             gap={'24px'}
         >
             <Image
-                src={buyCohort}
+                src={udemyWebp}
                 alt="An Image: course content thumbnail"
                 loading="lazy"
                 width={{ md: '50%' }}
