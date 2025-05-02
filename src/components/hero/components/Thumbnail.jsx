@@ -28,10 +28,10 @@ const Thumbnail = () => {
             scrollMarginTop={{ base: '75px', md: '100px', lg: '110px' }}
         >
             <Show above="md">
-                <Iframe height={'471px'} />
+                <Iframe height={'666px'} />
             </Show>
             <Show below="md">
-                <Iframe height={'190px'} />
+                <Iframe height={'338px'} />
             </Show>
         </Flex>
     )
