@@ -111,6 +111,12 @@ const MainContentHero = () => {
                         _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
+                        onClick={() => {
+                            const thumbnailSection = document.getElementById('video-section');
+                            if (thumbnailSection) {
+                                thumbnailSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
                     >
                         <Flex justifyContent={'center'} alignItems={'center'}>
                             <Image src={isHovered ? playButtonWhite : playButton} alt="An Icon: video play control button"/>

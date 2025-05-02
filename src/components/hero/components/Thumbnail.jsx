@@ -19,7 +19,14 @@ const Iframe = ({ height }) => {
 
 const Thumbnail = () => {
     return (
-        <Flex padding={{base: '12px', md: '24px'}} backgroundColor={'rgba(254, 147, 50, 0.10)'} border={'1px solid #FE9332'} borderRadius={'12px'}>
+        <Flex 
+            padding={{base: '12px', md: '24px'}} 
+            backgroundColor={'rgba(254, 147, 50, 0.10)'} 
+            border={'1px solid #FE9332'} 
+            borderRadius={'12px'}
+            id="video-section"
+            scrollMarginTop={{ base: '75px', md: '100px', lg: '110px' }}
+        >
             <Show above="md">
                 <Iframe height={'471px'} />
             </Show>
