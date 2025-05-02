@@ -39,7 +39,17 @@ const Community = () => {
                     80,000+ Active coders on Discord
                 </Text>
                 <Box>
-                    <Button variant={'unstyled'} py={'12px'} px={'30px'} background={'#FE9332'} borderRadius={'4px'} color={'#ffffff'} height={'48px'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
+                    <Button 
+                        variant={'unstyled'} 
+                        py={'12px'} 
+                        px={'30px'} 
+                        background={'#FE9332'} 
+                        borderRadius={'4px'} 
+                        color={'#ffffff'} 
+                        height={'48px'} 
+                        _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
+                        onClick={() => window.open('https://discord.com/channels/1317606470925160589/1327876198495420426', '_blank')}
+                    >
                         <Text lineHeight={'24px'} fontWeight={'700'} fontSize={'16px'} fontFamily={'Public Sans'}>
                             Join Our Discord Community
                         </Text>
