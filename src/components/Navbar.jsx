@@ -7,12 +7,14 @@ import reviewsNavIcon from "../assets/svg/reviews-nav-icon.svg"
 import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
 import hamburgerIcon from "../assets/svg/hamburger.svg"
 
-const NavItem = ({iconSrc, name}) => {
+const NavItem = ({iconSrc, name, href, target}) => {
     return (
-        <Flex gap={'12px'}>
-            <Image src={iconSrc} alt={`An Icon: ${name} navigation item`} height={'24px'} width={'24px'}/>
-            <Text size={'12px'} color={'black'}>{name}</Text>
-        </Flex>
+        <Box as="a" href={href} target={target} _hover={{ textDecoration: 'none' }}>
+            <Flex gap={'12px'}>
+                <Image src={iconSrc} alt={`An Icon: ${name} navigation item`} height={'24px'} width={'24px'}/>
+                <Text size={'12px'} color={'black'}>{name}</Text>
+            </Flex>
+        </Box>
     )
 }
 
@@ -66,10 +68,10 @@ const Navbar = () => {
                         alignItems={'center'}
                         gap={'32px'}
                     >
-                        <NavItem iconSrc={cohortNavIcon} name="Cohorts" />
-                        <NavItem iconSrc={docsNavIcon} name="Docs" />
-                        <NavItem iconSrc={reviewsNavIcon} name="Reviews" />
-                        <NavItem iconSrc={udemyNavIcon} name="Udemy" />
+                        <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" />
+                        <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" />
+                        <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" />
+                        <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" />
                     </Flex>
                 </Show>
                 <Flex gap={'24px'} align={'center'}>
@@ -133,10 +135,10 @@ const Navbar = () => {
                                 gap="32px"
                                 p="24px"
                             >
-                                <NavItem iconSrc={cohortNavIcon} name="Cohorts" />
-                                <NavItem iconSrc={docsNavIcon} name="Docs" />
-                                <NavItem iconSrc={reviewsNavIcon} name="Reviews" />
-                                <NavItem iconSrc={udemyNavIcon} name="Udemy" />
+                                <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" />
+                                <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" />
+                                <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" />
+                                <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" />
                             </Flex>
                         </Flex>
                     </DrawerBody>

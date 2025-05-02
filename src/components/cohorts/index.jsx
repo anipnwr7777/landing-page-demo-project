@@ -10,6 +10,7 @@ const Cohorts = () => {
             flexDirection={'column'}
             align={{base: 'flex-start', md: 'center'}}
             py={'64px'}
+            id="cohorts"
         >
             <Flex gap={'16px'} alignItems={'center'}>
                 <Box height={'32px'} width={'32px'}>
