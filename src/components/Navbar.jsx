@@ -8,8 +8,22 @@ import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
 import hamburgerIcon from "../assets/svg/hamburger.svg"
 
 const NavItem = ({iconSrc, name, href, target}) => {
+    const handleClick = (e) => {
+        // Only handle internal links (starting with #)
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const element = document.querySelector(href);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    };
+
     return (
-        <Box as="a" href={href} target={target} _hover={{ textDecoration: 'none' }}>
+        <Box as="a" href={href} target={target} onClick={handleClick} _hover={{ textDecoration: 'none' }}>
             <Flex gap={'12px'}>
                 <Image src={iconSrc} alt={`An Icon: ${name} navigation item`} height={'24px'} width={'24px'}/>
                 <Text size={'12px'} color={'black'}>{name}</Text>
