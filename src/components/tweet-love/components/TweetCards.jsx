@@ -12,6 +12,13 @@ const TweetCards = () => {
             maxWidth={'900%'}
             justifyContent={'center'}
             overflow={'scroll'}
+            sx={{
+                '&::-webkit-scrollbar': {
+                    display: 'none'
+                },
+                '-ms-overflow-style': 'none',
+                'scrollbarWidth': 'none'
+            }}
         >
             <Show below="md">
                 <TweetCard
