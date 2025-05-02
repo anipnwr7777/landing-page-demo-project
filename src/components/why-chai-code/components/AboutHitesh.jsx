@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react"
+import { Box, Flex, Heading, Image, Text, Link } from "@chakra-ui/react"
 import linkedin from "../../../assets/svg/linkedin.svg"
 import twitter from "../../../assets/svg/twitter.svg"
 import map from "../../../assets/svg/map.svg"
@@ -57,8 +57,12 @@ const AboutHitesh = () => {
                         <Flex justify={'space-between'}>
                             <Heading variant={'h3'}>Hitesh Choudhary</Heading>
                             <Flex gap={'16px'}>
-                                <Image src={twitter} height={'32px'} width={'32px'} alt="An Icon: Twitter social media profile" />
-                                <Image src={linkedin} height={'32px'} width={'32px'} alt="An Icon: LinkedIn professional network profile" />
+                                <Link href="https://x.com/Hiteshdotcom" isExternal>
+                                    <Image src={twitter} height={'32px'} width={'32px'} alt="An Icon: Twitter social media profile" />
+                                </Link>
+                                <Link href="https://www.linkedin.com/in/hiteshchoudhary/" isExternal>
+                                    <Image src={linkedin} height={'32px'} width={'32px'} alt="An Icon: LinkedIn professional network profile" />
+                                </Link>
                             </Flex>
                         </Flex>
                         <Flex flexDirection={'column'} gap={'16px'}>
