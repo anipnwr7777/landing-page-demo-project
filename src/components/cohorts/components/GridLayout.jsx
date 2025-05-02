@@ -1,6 +1,9 @@
 import { Grid, Box, useBreakpointValue } from "@chakra-ui/react"
 import CourseCard from "./CourseCard"
 import buyCohort from "../../../assets/webp/buy-cohort.webp"
+import devops from "../../../assets/webp/devops.webp"
+import webdevCohort from "../../../assets/webp/web-dev-cohort.webp"
+import codingHeros from "../../../assets/webp/coding-heroes.webp"
 
 const courseData = [
     {
@@ -36,7 +39,7 @@ const courseData = [
         savePercent: '38%',
         startDate: 'April 15, 2025',
         duration: '1-2 months',
-        icon: buyCohort,
+        icon: devops,
         tags: ['Docker', 'Kubernetes', 'CI/CD'],
         buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227963'
     },
@@ -48,7 +51,7 @@ const courseData = [
         savePercent: '21%',
         startDate: 'April 12, 2025',
         duration: '6 months',
-        icon: buyCohort,
+        icon: webdevCohort,
         tags: ['JavaScript', 'React', 'Node.js'],
         buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=214297'
     },
@@ -60,7 +63,7 @@ const courseData = [
         savePercent: '50%',
         startDate: 'NA',
         duration: 'NA',
-        icon: buyCohort,
+        icon: codingHeros,
         tags: ['HTML', 'CSS', 'JavaScript'],
         buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
     },
@@ -72,7 +75,7 @@ const courseData = [
         savePercent: '50%',
         startDate: 'NA',
         duration: 'NA',
-        icon: buyCohort,
+        icon: codingHeros,
         tags: ['HTML', 'CSS', 'JavaScript'],
         buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
     }
