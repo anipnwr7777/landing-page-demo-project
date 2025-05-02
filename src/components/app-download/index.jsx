@@ -43,12 +43,14 @@ const AppDownload = () => {
                         text={'GET IT ON'}
                         store={'Google Play'}
                         href={'https://play.google.com/store/apps/details?id=com.chaicode.courses&hl=en_IN&pli=1'}
+                        alt="An Icon: Google Play Store"
                     />
                     <Download 
                         storeIcon={appstore}
                         text={'Download On The'}
                         store={'App Store'}
                         href={'https://apps.apple.com/in/app/chaicode/id6504993143'}
+                        alt="An Icon: App Store"
                     />
                 </Flex>
             </Flex>
