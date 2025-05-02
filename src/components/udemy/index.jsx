@@ -80,7 +80,7 @@ const CourseCard = () => {
                         <Text variant={'body'} textDecoration={'line-through'}>₹ 8,999</Text>
                         <Text variant={'p-ui-medium'}>Save 21%</Text>
                     </Flex>
-                    <Button backgroundColor={'primary'} width={'100%'}>
+                    <Button backgroundColor={'primary'} width={'100%'} _hover={{ backgroundColor: '#FF7D0C' }}>
                         <Text
                             color={'white.0'}
                             fontSize={'16px'}
@@ -205,8 +205,8 @@ const Udemy = () => {
                         ))}
                     </Flex>
                 </Flex>
-                <Button border={'1px solid #FF7D0C'} bg={'#ffffff'} borderRadius={'4px'} py={'12px'} px={'30px'} mt={'16px'}>
-                    <Text color={'#FE9332'} fontWeight={'700'}>
+                <Button border={'1px solid #FF7D0C'} bg={'#ffffff'} borderRadius={'4px'} py={'12px'} px={'30px'} mt={'16px'} _hover={{ backgroundColor: '#FF7D0C', color: 'white' }}>
+                    <Text color={'#FE9332'} fontWeight={'700'} _hover={{ color: 'white' }}>
                         View All Courses on Udemy
                     </Text>
                 </Button>

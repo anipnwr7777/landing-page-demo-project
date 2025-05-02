@@ -12,6 +12,7 @@ const CTAButton = ({url, text}) => {
             overflow={'hidden'}
             aria-label={text}
             role="link"
+            _hover={{ backgroundColor: '#FF7D0C' }}
         >
             <Flex align={'center'} position={'relative'} gap={'8px'}>
                 <Box
