@@ -7,7 +7,7 @@ import reviewsNavIcon from "../assets/svg/reviews-nav-icon.svg"
 import udemyNavIcon from "../assets/svg/udemy-nav-icons.svg"
 import hamburgerIcon from "../assets/svg/hamburger.svg"
 
-const NavItem = ({iconSrc, name, href, target}) => {
+const NavItem = ({iconSrc, name, href, target, onClose}) => {
     const handleClick = (e) => {
         // Only handle internal links (starting with #)
         if (href.startsWith('#')) {
@@ -18,6 +18,9 @@ const NavItem = ({iconSrc, name, href, target}) => {
                     behavior: 'smooth',
                     block: 'start'
                 });
+                if (onClose) {
+                    onClose();
+                }
             }
         }
     };
@@ -149,10 +152,10 @@ const Navbar = () => {
                                 gap="32px"
                                 p="24px"
                             >
-                                <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" />
-                                <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" />
-                                <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" />
-                                <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" />
+                                <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" onClose={handleDrawerClose} />
+                                <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" onClose={handleDrawerClose} />
+                                <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" onClose={handleDrawerClose} />
+                                <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" onClose={handleDrawerClose} />
                             </Flex>
                         </Flex>
                     </DrawerBody>
