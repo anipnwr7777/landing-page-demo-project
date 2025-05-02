@@ -52,8 +52,8 @@ const TestimonialCard = ({ data }) => {
                 <Flex gap={'16px'}>
                     <Image src={roosterIcon} alt="User avatar"/>
                     <Flex flexDirection={'column'}>
-                        <Text variant={'p-ui'}>Rooster Babu</Text>
-                        <Text variant={'detail'}>@roosterraj</Text>
+                        <Text variant={'p-ui'}>Abhishek</Text>
+                        <Text variant={'detail'}>@abhi1442</Text>
                     </Flex>
                 </Flex>
                 <Image src={microsoftIcon} height={'50%'} maxWidth={'30%'} alt="Microsoft logo"/>
