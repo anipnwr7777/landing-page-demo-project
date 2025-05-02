@@ -1,5 +1,82 @@
 import { Grid, Box, useBreakpointValue } from "@chakra-ui/react"
 import CourseCard from "./CourseCard"
+import buyCohort from "../../../assets/webp/buy-cohort.webp"
+
+const courseData = [
+    {
+        title: 'Full Stack Data Science 1.0',
+        description: 'Explore everything from foundational Python skills to deploying real-world data science projects',
+        discountedPrice: '6,999',
+        originalPrice: '8,999',
+        savePercent: '22%',
+        startDate: 'April 12, 2025',
+        duration: '6 months',
+        icon: buyCohort,
+        tags: ['Python', 'TensorFlow', 'Pandas'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227817'
+    },
+    // Duplicating the same template 5 more times with slight variations
+    {
+        title: 'GenAI with Python | Concept to Deployment Projects 1.0',
+        description: 'Explore the development aspects of AI applications in our GenAI with Python course',
+        discountedPrice: '4,999',
+        originalPrice: '7,999',
+        savePercent: '38%',
+        startDate: 'April 7, 2025',
+        duration: '1-2 months',
+        icon: buyCohort,
+        tags: ['Python', 'LLMs', 'Transformers'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227321'
+    },
+    {
+        title: 'DevOps for Developers 1.0',
+        description: 'Your essential introduction to DevOps tailored for developers. Dive into DevOps for Developers 1.0 and elevate your skills!',
+        discountedPrice: '4,999',
+        originalPrice: '7,999',
+        savePercent: '38%',
+        startDate: 'April 15, 2025',
+        duration: '1-2 months',
+        icon: buyCohort,
+        tags: ['Docker', 'Kubernetes', 'CI/CD'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227963'
+    },
+    {
+        title: 'Web Dev Cohort 1.0',
+        description: 'Join our Web Dev Cohort 1.0 for an ultimate guide to building software on the web!',
+        discountedPrice: '6,999',
+        originalPrice: '8,999',
+        savePercent: '21%',
+        startDate: 'April 12, 2025',
+        duration: '6 months',
+        icon: buyCohort,
+        tags: ['JavaScript', 'React', 'Node.js'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=214297'
+    },
+    {
+        title: 'Coding Hero 2025',
+        description: 'Join our Coding Hero 2025 program, designed to empower students with essential skills for the future.',
+        discountedPrice: '299',
+        originalPrice: '599',
+        savePercent: '50%',
+        startDate: 'NA',
+        duration: 'NA',
+        icon: buyCohort,
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
+    },
+    {
+        title: 'Coding Hero 2025',
+        description: 'Join our Coding Hero 2025 program, designed to empower students with essential skills for the future.',
+        discountedPrice: '299',
+        originalPrice: '599',
+        savePercent: '50%',
+        startDate: 'NA',
+        duration: 'NA',
+        icon: buyCohort,
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
+    }
+]
 
 const GridLayout = () => {
     const numberOfCards = useBreakpointValue({ sm: 3, base: 3, md: 6, lg: 6 })
@@ -18,19 +95,18 @@ const GridLayout = () => {
                 md: "center"
             }}
         >
-            {[...Array(numberOfCards)].map((_, index) => (
+            {courseData.slice(0, numberOfCards).map((course, index) => (
                 <Box
                     key={index}
                     height="100%"
                     width="100%"
-                    // bg="primary"
                     borderRadius="lg"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     color="white.0"
                 >
-                    <CourseCard />
+                    <CourseCard {...course} />
                 </Box>
             ))}
         </Grid>

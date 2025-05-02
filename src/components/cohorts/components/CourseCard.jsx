@@ -30,82 +30,86 @@ const CourseCard = ({
             p={'24px'}
             direction={'column'}
             gap={'24px'}
+            height={'100%'}
+            justify={'space-between'}
         >
-            <Image 
-                src={icon} 
-                alt="An Image: course content thumbnail" 
-                loading="lazy"
-            />
-            <Flex gap={'12px'} flexDirection={'column'}>
-                <Flex justifyContent={'space-between'}>
-                    <Flex gap={'16px'}>
-                        <Flex gap={'12px'}>
-                            <Image 
-                                src={calendarIcon} 
-                                alt="An Icon: calendar showing course schedule" 
-                                loading="lazy"
-                            />
-                            <Text variant={'token'}>{`Starts ${startDate}`}</Text>
+            <Flex flexDirection={'column'} gap={'24px'}>    
+                <Image
+                    src={icon}
+                    alt="An Image: course content thumbnail"
+                    loading="lazy"
+                />
+                <Flex gap={'12px'} flexDirection={'column'}>
+                    <Flex justifyContent={'space-between'}>
+                        <Flex gap={'16px'}>
+                            <Flex gap={'12px'}>
+                                <Image
+                                    src={calendarIcon}
+                                    alt="An Icon: calendar showing course schedule"
+                                    loading="lazy"
+                                />
+                                <Text variant={'token'}>{`Starts ${startDate}`}</Text>
+                            </Flex>
+                            <Flex gap={'12px'}>
+                                <Image
+                                    src={timeIcon}
+                                    alt="An Icon: clock showing course duration"
+                                    loading="lazy"
+                                />
+                                <Text variant={'token'}>{duration}</Text>
+                            </Flex>
                         </Flex>
                         <Flex gap={'12px'}>
-                            <Image 
-                                src={timeIcon} 
-                                alt="An Icon: clock showing course duration" 
+                            <Image
+                                src={calendarIcon}
+                                alt="An Icon: live session schedule indicator"
                                 loading="lazy"
                             />
-                            <Text variant={'token'}>{duration}</Text>
+                            <Text variant={'token'}>Live</Text>
                         </Flex>
                     </Flex>
-                    <Flex gap={'12px'}>
-                        <Image 
-                            src={calendarIcon} 
-                            alt="An Icon: live session schedule indicator" 
-                            loading="lazy"
-                        />
-                        <Text variant={'token'}>Live</Text>
+                    <Flex flexDirection={'column'} gap={'0.5rem'}>
+                        <Heading variant={'h4'}>
+                            {title}
+                        </Heading>
+                        <Text variant={'p-ui'} align={'left'}>
+                            {description}
+                        </Text>
+                        <Flex gap={'4px'}>
+                            {
+                                tags.map((tag) =>
+                                    <Tag
+                                        key={tag}
+                                    >
+                                        {tag}
+                                    </Tag>
+                                )
+                            }
+                        </Flex>
                     </Flex>
                 </Flex>
-                <Flex flexDirection={'column'} gap={'0.5rem'}>
-                    <Heading variant={'h4'}>
-                        {title}
-                    </Heading>
-                    <Text variant={'p-ui'} align={'left'}>
-                        {description}
-                    </Text>
-                    <Flex gap={'4px'}>
-                        {
-                            tags.map((tag) =>
-                                <Tag
-                                    key={tag}
-                                >
-                                    {tag}
-                                </Tag>
-                            )
-                        }
-                    </Flex>
+            </Flex>
+            <Flex flexDirection={'column'} gap={'16px'}>
+                <Flex gap={'16px'} align={'center'}>
+                    <Heading variant={'h4'}>{`₹ ${discountedPrice}`}</Heading>
+                    <Text variant={'body'} textDecoration={'line-through'}>{`₹ ${originalPrice}`}</Text>
+                    <Text variant={'p-ui-medium'}>{`Save ${savePercent}`}</Text>
                 </Flex>
-                <Flex flexDirection={'column'} gap={'16px'}>
-                    <Flex gap={'16px'} align={'center'}>
-                        <Heading variant={'h4'}>{`₹ ${discountedPrice}`}</Heading>
-                        <Text variant={'body'} textDecoration={'line-through'}>{`₹ ${originalPrice}`}</Text>
-                        <Text variant={'p-ui-medium'}>{`Save ${savePercent}`}</Text>
-                    </Flex>
-                    <Flex gap={'16px'} width={'100%'}>
-                        <Button 
-                            backgroundColor={'primary'} 
-                            _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }} 
-                            width={'100%'}
-                            onClick={() => window.open(buyNowLink, '_blank')}
-                        >
-                            <Text
-                                color={'white.0'}
-                                fontSize={'16px'}
-                                fontFamily={'Public Sans'}
-                                fontWeight={'700'}
-                                lineHeight={'24px'}
-                            >Buy Now</Text>
-                        </Button>
-                    </Flex>
+                <Flex gap={'16px'} width={'100%'}>
+                    <Button
+                        backgroundColor={'primary'}
+                        _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
+                        width={'100%'}
+                        onClick={() => window.open(buyNowLink, '_blank')}
+                    >
+                        <Text
+                            color={'white.0'}
+                            fontSize={'16px'}
+                            fontFamily={'Public Sans'}
+                            fontWeight={'700'}
+                            lineHeight={'24px'}
+                        >Buy Now</Text>
+                    </Button>
                 </Flex>
             </Flex>
         </Flex>
