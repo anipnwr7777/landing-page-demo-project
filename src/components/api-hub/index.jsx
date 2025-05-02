@@ -33,7 +33,14 @@ const APIHub = () => {
                         </Flex>
                     </Flex>
                     <Box>
-                        <Button background={'#FE9332'} borderRadius={'4px'} py={'12px'} px={'30px'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
+                        <Button 
+                            background={'#FE9332'} 
+                            borderRadius={'4px'} 
+                            py={'12px'} 
+                            px={'30px'} 
+                            _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
+                            onClick={() => window.open('https://freeapi.app/', '_blank')}
+                        >
                             <Text color={'#ffffff'} fontWeight={'700'} lineHeight={'24px'}>
                                 Check Free API Docs
                             </Text>
