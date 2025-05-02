@@ -70,23 +70,25 @@ const Testimonials = () => {
 
     const handlePrev = () => {
         if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1)
-            scrollRef.current?.children[currentIndex - 1]?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
-            })
+            setCurrentIndex(currentIndex - 1);
+            const container = scrollRef.current;
+            const scrollAmount = container.offsetWidth;
+            container.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
         }
     }
 
     const handleNext = () => {
         if (currentIndex < testimonialData.length - 1) {
-            setCurrentIndex(currentIndex + 1)
-            scrollRef.current?.children[currentIndex + 1]?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
-            })
+            setCurrentIndex(currentIndex + 1);
+            const container = scrollRef.current;
+            const scrollAmount = container.offsetWidth;
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
         }
     }
 
@@ -166,8 +168,17 @@ const Testimonials = () => {
                 <Flex
                     ref={scrollRef}
                     overflow="hidden"
-                    gap={4}
                     width={'100%'}
+                    sx={{
+                        // scrollSnapType: 'x mandatory',
+                        '&::-webkit-scrollbar': { display: 'none' },
+                        scrollbarWidth: 'none',
+                        display: 'grid',
+                        gridAutoFlow: 'column',
+                        gridAutoColumns: '100%',
+                        alignItems: 'center',
+                        justifyItems: 'center'
+                    }}
                 >
                     {testimonialData.map((testimonial, index) => (
                         <Flex
@@ -178,8 +189,10 @@ const Testimonials = () => {
                             transform={currentIndex === index ? 'scale(1)' : 'scale(0.95)'}
                             transition="all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)"
                             width={'100%'}
+                            maxWidth={'602px'}
                             role="article"
                             aria-label={`Testimonial from ${testimonial.name}`}
+                            justify="center"
                         >
                             <TestimonialCard data={testimonial} />
                         </Flex>
