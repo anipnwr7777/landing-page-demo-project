@@ -6,6 +6,9 @@ import hiteshTweet from "../../../assets/svg/hitesh-tweet.svg"
 import twitterAnUser from "../../../assets/svg/twitter-an-user.svg"
 import jaaniPayment from "../../../assets/svg/jaani-payment.svg"
 import prasenJit from "../../../assets/svg/prasenjit-image.svg"
+import tweet1 from "../../../assets/webp/tweet-1.webp"
+import tweet2 from "../../../assets/webp/tweet-2.webp"
+import tweet3 from "../../../assets/webp/tweet-3.webp"
 
 const TweetCards = () => {
     return (
@@ -34,7 +37,7 @@ const TweetCards = () => {
                     icon={twitterAnUser}
                     name={'Jaani'}
                     handle={'@jahanweee'}
-                    tweetImage={jaaniPayment}
+                    tweetImage={tweet1}
                     tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
@@ -44,7 +47,7 @@ const TweetCards = () => {
                     icon={hiteshPassport}
                     name={'Hitesh Choudhary'}
                     handle={'@Hiteshdotcom'}
-                    tweetImage={hiteshTweet}
+                    tweetImage={tweet2}
                     tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
                 />
                 <TweetCard
@@ -54,7 +57,7 @@ const TweetCards = () => {
                     icon={twitterAnUser}
                     name={'prasenjit basu'}
                     handle={'@prasenjitbasu44'}
-                    tweetImage={prasenJit}
+                    tweetImage={tweet3}
                     tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
                 />
             </Show>
@@ -66,7 +69,7 @@ const TweetCards = () => {
                     icon={twitterAnUser}
                     name={'Jaani'}
                     handle={'@jahanweee'}
-                    tweetImage={jaaniPayment}
+                    tweetImage={tweet1}
                     tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
@@ -76,7 +79,7 @@ const TweetCards = () => {
                     icon={hiteshPassport}
                     name={'Hitesh Choudhary'}
                     handle={'@Hiteshdotcom'}
-                    tweetImage={hiteshTweet}
+                    tweetImage={tweet2}
                     tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
                 />
                 <TweetCard
@@ -86,7 +89,7 @@ const TweetCards = () => {
                     icon={twitterAnUser}
                     name={'prasenjit basu'}
                     handle={'@prasenjitbasu44'}
-                    tweetImage={prasenJit}
+                    tweetImage={tweet3}
                     tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
                 />
             </Show>
