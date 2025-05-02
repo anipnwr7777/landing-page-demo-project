@@ -74,7 +74,7 @@ const CourseCard = () => {
                         <Text variant={'p-ui-medium'}>Save 21%</Text>
                     </Flex>
                     <Flex gap={'16px'}>
-                        <Button backgroundColor={'primary'} _hover={{ backgroundColor: '#FF7D0C' }}>
+                        <Button backgroundColor={'primary'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
                             <Text
                                 color={'white.0'}
                                 fontSize={'16px'}
@@ -83,7 +83,7 @@ const CourseCard = () => {
                                 lineHeight={'24px'}
                             >Buy Now</Text>
                         </Button>
-                        <Button backgroundColor={'white.0'} border={'1px solid #FF7D0C'} borderRadius={'4px'} _hover={{ backgroundColor: '#FF7D0C' }}>
+                        <Button backgroundColor={'white.0'} border={'1px solid #FF7D0C'} borderRadius={'4px'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
                             <Text
                                 color={'primary'}
                                 fontSize={'16px'}

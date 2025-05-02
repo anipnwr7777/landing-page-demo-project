@@ -108,7 +108,7 @@ const MainContentHero = () => {
                         border={'1px solid #FE9332'} 
                         padding={0} 
                         backgroundColor={'white.0'} 
-                        _hover={{ backgroundColor: '#FF7D0C' }}
+                        _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >

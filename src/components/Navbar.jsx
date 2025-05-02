@@ -97,7 +97,7 @@ const Navbar = () => {
                         backgroundColor={'primary'} 
                         color={'white.0'}
                         onClick={() => window.location.href = 'https://courses.chaicode.com/learn/account/signin'}
-                        _hover={{ backgroundColor: '#FF7D0C' }}
+                        _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
                     >
                         Log In
                     </Button>
@@ -139,7 +139,7 @@ const Navbar = () => {
                                 </svg>
                             }
                             aria-label="Close menu"
-                            _hover={{ backgroundColor: '#FF7D0C', color: 'white' }}
+                            _hover={{ backgroundColor: '#FF7D0C', color: 'white', cursor: 'pointer' }}
                         />
                     </DrawerHeader>
                     <DrawerBody p={0}>

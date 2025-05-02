@@ -80,7 +80,7 @@ const CourseCard = () => {
                         <Text variant={'body'} textDecoration={'line-through'}>₹ 8,999</Text>
                         <Text variant={'p-ui-medium'}>Save 21%</Text>
                     </Flex>
-                    <Button backgroundColor={'primary'} width={'100%'} _hover={{ backgroundColor: '#FF7D0C' }}>
+                    <Button backgroundColor={'primary'} width={'100%'} _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}>
                         <Text
                             color={'white.0'}
                             fontSize={'16px'}
@@ -157,6 +157,7 @@ const Udemy = () => {
                             isDisabled={currentIndex === 0}
                             variant={'unstyled'}
                             aria-label="View previous course"
+                            _hover={{ cursor: 'pointer' }}
                         >
                             <Flex border={'1px solid #A0AEC0'} borderRadius={'24px'} align={'center'} justify={'center'} height={'24px'} width={'24px'} padding={'4px'} background={'rgba(255, 255, 255, 0.64)'}>
                                 <Image
@@ -171,6 +172,7 @@ const Udemy = () => {
                             isDisabled={currentIndex === courseData.length - 1}
                             variant={'unstyled'}
                             aria-label="View next course"
+                            _hover={{ cursor: 'pointer' }}
                         >
                             <Flex border={'1px solid #A0AEC0'} borderRadius={'24px'} align={'center'} justify={'center'} height={'24px'} width={'24px'} padding={'4px'} background={'rgba(255, 255, 255, 0.64)'} zIndex={'2'}>
                                 <Image
@@ -205,7 +207,7 @@ const Udemy = () => {
                         ))}
                     </Flex>
                 </Flex>
-                <Button border={'1px solid #FF7D0C'} bg={'#ffffff'} borderRadius={'4px'} py={'12px'} px={'30px'} mt={'16px'} _hover={{ backgroundColor: '#FF7D0C', color: 'white' }}>
+                <Button border={'1px solid #FF7D0C'} bg={'#ffffff'} borderRadius={'4px'} py={'12px'} px={'30px'} mt={'16px'} _hover={{ backgroundColor: '#FF7D0C', color: 'white', cursor: 'pointer' }}>
                     <Text color={'#FE9332'} fontWeight={'700'} _hover={{ color: 'white' }}>
                         View All Courses on Udemy
                     </Text>
