@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import buyCohort from "../../../assets/svg/buy-cohort.webp"
+import buyCohort from "../../../assets/webp/buy-cohort.webp"
 import calendarIcon from "../../../assets/svg/calendar.svg"
 import timeIcon from "../../../assets/svg/time.svg"
 

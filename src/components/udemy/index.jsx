@@ -3,7 +3,7 @@ import { useState, useRef } from "react"
 import udemy from "../../assets/svg/udemy-bg.svg"
 import leftIcon from "../../assets/svg/left-arrow.svg"
 import rightIcon from "../../assets/svg/right-arrow-test.svg"
-import buyCohort from "../../assets/svg/buy-cohort.webp"
+import buyCohort from "../../assets/webp/buy-cohort.webp"
 import rating from "../../assets/svg/rating.svg"
 
 const courseData = [

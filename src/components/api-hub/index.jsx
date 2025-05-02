@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react"
 import device from "../../assets/svg/device.svg"
 import rocket from "../../assets/svg/rocket.svg"
-import buyCohort from "../../assets/svg/buy-cohort.webp"
+import buyCohort from "../../assets/webp/buy-cohort.webp"
 
 const APIHub = () => {
     return (
