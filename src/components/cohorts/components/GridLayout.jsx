@@ -4,6 +4,7 @@ import buyCohort from "../../../assets/webp/buy-cohort.webp"
 import devops from "../../../assets/webp/devops.webp"
 import webdevCohort from "../../../assets/webp/web-dev-cohort.webp"
 import codingHeros from "../../../assets/webp/coding-heroes.webp"
+import genAI from "../../../assets/webp/genai.webp"
 
 const courseData = [
     {
@@ -27,7 +28,7 @@ const courseData = [
         savePercent: '38%',
         startDate: 'April 7, 2025',
         duration: '1-2 months',
-        icon: buyCohort,
+        icon: genAI,
         tags: ['Python', 'LLMs', 'Transformers'],
         buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227321'
     },

@@ -57,7 +57,6 @@ const APIHub = () => {
                         alt="An Image: course content thumbnail"
                         loading="lazy"
                         borderRadius={'12px'}
-
                     />
                 </Box>
             </Flex>
