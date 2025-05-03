@@ -10,13 +10,15 @@ const App = () => {
 			<Flex
 				flexDirection={'column'}
 				alignItems={{ base: 'flex-start', md: 'center' }}
+				width="100%"
+				overflow="hidden"
 			>
 				<Box
 					position={'absolute'}
 					top={0}
 					left={0}
 					height={'150vh'}
-					width={'100vw'}
+					width={'100%'}
 					overflow={'hidden'}
 					zIndex={-1}
 				>
