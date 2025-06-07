@@ -44,14 +44,14 @@ const TweetCard = ({height, width, content, icon, name, handle, tweetImage, twee
                     position={'relative'}
                     width={'100%'}
                 >
-                    <Image 
+                    {/* <Image 
                         src={tweetImage} 
                         borderRadius={'20px'} 
                         height={'100%'} 
                         width={'100%'} 
                         objectFit={'cover'}
                         objectPosition={'center'}
-                    />
+                    /> */}
                 </Box>
             </Box>
         </Link>

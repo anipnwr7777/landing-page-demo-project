@@ -33,7 +33,7 @@ const TweetCards = () => {
                 <TweetCard
                     height={'100%'}
                     width={{ base: '300px', sm: '378px' }}
-                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, @Hiteshdotcom and @piyushgarg_dev for the fantastic giveaway. This has doubled my motivation. Also, thanks to @nirudhuuu @mukulpadwal @yntpdotme"}
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
                     icon={twitterAnUser}
                     name={'Jaani'}
                     handle={'@jahanweee'}
@@ -43,29 +43,29 @@ const TweetCards = () => {
                 <TweetCard
                     height={'100%'}
                     width={{ base: '300px', sm: '378px' }}
-                    content={"Our cohorts are experience to have. When you learn from real world experienced folks, it's totally a game changer. These small talks can happen only in live classes. Check out #chaiCode for our new cohorts"}
-                    icon={hiteshPassport}
-                    name={'Hitesh Choudhary'}
-                    handle={'@Hiteshdotcom'}
-                    tweetImage={tweet2}
-                    tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
+                    icon={twitterAnUser}
+                    name={'Jaani'}
+                    handle={'@jahanweee'}
+                    tweetImage={tweet1}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
                     height={'100%'}
                     width={{ base: '300px', sm: '378px' }}
-                    content={"Thank you will be a very small word for you all. I can't express my love and respect for you all in words. I had never heard or joined any bootcamp who gave away the fees of a student just to motivate other students and this can only be done in our WebDev Cohort-1 by Hitesh Sir"}
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
                     icon={twitterAnUser}
-                    name={'prasenjit basu'}
-                    handle={'@prasenjitbasu44'}
-                    tweetImage={tweet3}
-                    tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
+                    name={'Jaani'}
+                    handle={'@jahanweee'}
+                    tweetImage={tweet1}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
             </Show>
             <Show above="md">
                 <TweetCard
                     height={'429px'}
                     width={'378px'}
-                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, @Hiteshdotcom and @piyushgarg_dev for the fantastic giveaway. This has doubled my motivation. Also, thanks to @nirudhuuu @mukulpadwal @yntpdotme"}
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
                     icon={twitterAnUser}
                     name={'Jaani'}
                     handle={'@jahanweee'}
@@ -73,24 +73,24 @@ const TweetCards = () => {
                     tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
-                    height={'517px'}
-                    width={'456px'}
-                    content={"Our cohorts are experience to have. When you learn from real world experienced folks, it's totally a game changer. These small talks can happen only in live classes. Check out #chaiCode for our new cohorts"}
-                    icon={hiteshPassport}
-                    name={'Hitesh Choudhary'}
-                    handle={'@Hiteshdotcom'}
-                    tweetImage={tweet2}
-                    tweetUrl="https://x.com/Hiteshdotcom/status/1905574126112153860"
+                    height={'100%'}
+                    width={{ base: '300px', sm: '378px' }}
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
+                    icon={twitterAnUser}
+                    name={'Jaani'}
+                    handle={'@jahanweee'}
+                    tweetImage={tweet1}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
                 <TweetCard
-                    height={'429px'}
-                    width={'378px'}
-                    content={"Thank you will be a very small word for you all. I can't express my love and respect for you all in words. I had never heard or joined any bootcamp who gave away the fees of a student just to motivate other students and this can only be done in our WebDev Cohort-1 by Hitesh Sir"}
+                    height={'100%'}
+                    width={{ base: '300px', sm: '378px' }}
+                    content={"Just won ₹10K in a giveaway! Feeling incredibly lucky and grateful. Thank you, for the fantastic giveaway. This has doubled my motivation."}
                     icon={twitterAnUser}
-                    name={'prasenjit basu'}
-                    handle={'@prasenjitbasu44'}
-                    tweetImage={tweet3}
-                    tweetUrl="https://x.com/prasenjitbasu44/status/1906393735203836076"
+                    name={'Jaani'}
+                    handle={'@jahanweee'}
+                    tweetImage={tweet1}
+                    tweetUrl="https://x.com/jahanweee/status/1907045909394788416"
                 />
             </Show>
         </Flex>
