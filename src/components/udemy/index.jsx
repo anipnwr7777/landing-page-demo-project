@@ -5,6 +5,7 @@ import leftIcon from "../../assets/svg/left-arrow.svg"
 import rightIcon from "../../assets/svg/right-arrow-test.svg"
 import udemyWebp from "../../assets/webp/udemy.webp"
 import rating from "../../assets/svg/rating.svg"
+import nodejs from "../../assets/png/nodejs-frameworks.png"
 
 const courseData = [
     {
@@ -48,7 +49,7 @@ const CourseCard = () => {
             gap={'24px'}
         >
             <Image
-                src={udemyWebp}
+                src={nodejs}
                 alt="An Image: course content thumbnail"
                 loading="lazy"
                 width={{ md: '50%' }}

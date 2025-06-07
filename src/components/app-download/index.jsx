@@ -34,7 +34,7 @@ const AppDownload = () => {
             />
             <Flex flexDirection={'column'} gap={'24px'} maxWidth={'680px'}>
                 <Flex flexDirection={'column'} gap={'16px'}>
-                    <Heading variant={'h2'}>Take your coding journey anywhere with the ChaiCode mobile app.</Heading>
+                    <Heading variant={'h2'}>Take your coding journey anywhere with the Code mobile app.</Heading>
                     <Text variant={'p-ui'}>Access courses, join live sessions, and connect with the community - all from your pocket.</Text>
                 </Flex>
                 <Flex gap={'16px'} flexDirection={'row'}>

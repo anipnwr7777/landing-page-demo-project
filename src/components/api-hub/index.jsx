@@ -2,6 +2,7 @@ import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react"
 import device from "../../assets/svg/device.svg"
 import rocket from "../../assets/svg/rocket.svg"
 import freeAPI from "../../assets/webp/free-api.webp"
+import nodejs from "../../assets/png/nodejs-frameworks.png"
 
 const APIHub = () => {
     return (
@@ -53,7 +54,7 @@ const APIHub = () => {
                     maxHeight={'308px'}
                 >
                     <Image
-                        src={freeAPI}
+                        src={nodejs}
                         alt="An Image: course content thumbnail"
                         loading="lazy"
                         borderRadius={'12px'}

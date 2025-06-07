@@ -46,7 +46,7 @@ const TestimonialCard = ({ data }) => {
             align={'flex-start'}
         >
             <Image src={quoteIcon} alt="Quote" />
-            <Text variant={'p-ui'}>{'"Thanks to Chaicode, I was able to enhance my coding skills significantly! I used to struggle with building landing pages, but now I can create stunning designs in just a few hours. The resources provided made it easy to learn and implement new technologies like React and Tailwind CSS. I highly recommend it to anyone looking to level up their coding game!"'}
+            <Text variant={'p-ui'}>{'"Thanks, I was able to enhance my coding skills significantly! I used to struggle with building landing pages, but now I can create stunning designs in just a few hours. The resources provided made it easy to learn and implement new technologies like React and Tailwind CSS. I highly recommend it to anyone looking to level up their coding game!"'}
             </Text>
             <Flex align={'flex-end'} justifyContent={'space-between'} width={'100%'}>
                 <Flex gap={'16px'}>

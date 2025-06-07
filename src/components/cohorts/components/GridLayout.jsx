@@ -5,6 +5,7 @@ import devops from "../../../assets/webp/devops.webp"
 import webdevCohort from "../../../assets/webp/web-dev-cohort.webp"
 import codingHeros from "../../../assets/webp/coding-heroes.webp"
 import genAI from "../../../assets/webp/genai.webp"
+import nodejs from "../../../assets/png/nodejs-frameworks.png"
 
 const courseData = [
     {
@@ -15,7 +16,7 @@ const courseData = [
         savePercent: '22%',
         startDate: 'April 12, 2025',
         duration: '6 months',
-        icon: buyCohort,
+        icon: nodejs,
         tags: ['Python', 'TensorFlow', 'Pandas'],
         buyNowLink: 'https://anirudhpanwar.com'
     },
@@ -28,7 +29,7 @@ const courseData = [
         savePercent: '38%',
         startDate: 'April 7, 2025',
         duration: '1-2 months',
-        icon: genAI,
+        icon: nodejs,
         tags: ['Python', 'LLMs', 'Transformers'],
         buyNowLink: 'https://anirudhpanwar.com'
     },
@@ -40,7 +41,7 @@ const courseData = [
         savePercent: '38%',
         startDate: 'April 15, 2025',
         duration: '1-2 months',
-        icon: devops,
+        icon: nodejs,
         tags: ['Docker', 'Kubernetes', 'CI/CD'],
         buyNowLink: 'https://anirudhpanwar.com'
     },
@@ -52,7 +53,7 @@ const courseData = [
         savePercent: '21%',
         startDate: 'April 12, 2025',
         duration: '6 months',
-        icon: webdevCohort,
+        icon: nodejs,
         tags: ['JavaScript', 'React', 'Node.js'],
         buyNowLink: 'https://anirudhpanwar.com'
     },
@@ -64,7 +65,7 @@ const courseData = [
         savePercent: '50%',
         startDate: 'NA',
         duration: 'NA',
-        icon: codingHeros,
+        icon: nodejs,
         tags: ['HTML', 'CSS', 'JavaScript'],
         buyNowLink: 'https://anirudhpanwar.com'
     },
@@ -76,7 +77,7 @@ const courseData = [
         savePercent: '50%',
         startDate: 'NA',
         duration: 'NA',
-        icon: codingHeros,
+        icon: nodejs,
         tags: ['HTML', 'CSS', 'JavaScript'],
         buyNowLink: 'https://anirudhpanwar.com'
     }

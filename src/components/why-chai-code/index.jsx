@@ -16,15 +16,15 @@ const ButWhyChaiCode = () => {
             <Flex flexDir={'column'} gap={'16px'}>
                 <Flex gap={'16px'} alignItems={{ base: 'flex-start', md: 'center' }} flexGrow={0}>
                     <Show above="md">
-                        <Heading variant={'h2'} align={'center'} sx={{ whiteSpace: 'nowrap' }}>But Why ChaiCode?</Heading>
+                        <Heading variant={'h2'} align={'center'} sx={{ whiteSpace: 'nowrap' }}>But Why Us?</Heading>
                     </Show>
                     <Show below="md">
-                        <Heading variant={'h2'} align={'left'} sx={{ whiteSpace: 'nowrap' }}>But Why ChaiCode?</Heading>
+                        <Heading variant={'h2'} align={'left'} sx={{ whiteSpace: 'nowrap' }}>But Why Us?</Heading>
                     </Show>
                     <Image src={chaiIcon} height={'40px'} width={'45px'} alt="An Icon: chai cup symbolizing the brand"></Image>
                 </Flex>
                 <Text variant={'p'}>
-                    ChaiCode exists because we love tech and teaching
+                    Code exists because we love tech and teaching
                 </Text>
             </Flex>
             <Flex 

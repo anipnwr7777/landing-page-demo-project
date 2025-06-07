@@ -75,9 +75,9 @@ const Navbar = () => {
                 px={4}
             >
                 <Image 
-                    src={chaiCodeNavbarLogo}
-                    height={'32px'}
-                    width={'142px'}
+                    src={cohortNavIcon}
+                    height={'40px'}
+                    width={'60px'}
                     alt="ChaiCode Logo"
                 />
                 <Show above="md">

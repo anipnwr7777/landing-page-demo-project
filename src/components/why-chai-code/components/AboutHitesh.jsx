@@ -7,6 +7,7 @@ import fallingStar from "../../../assets/svg/falling-star.svg"
 import yt from "../../../assets/svg/yt.svg"
 import divider from "../../../assets/svg/divider.svg"
 import hiteshImage from "../../../assets/webp/image_hitesh.webp"
+import nodejs from "../../../assets/png/nodejs-frameworks.png"
 
 const points = [
     {
@@ -15,11 +16,11 @@ const points = [
     },
     {
         icon: star,
-        text: 'Ex founder of LCO(acquired)'
+        text: 'Ex founder of ABCD'
     },
     {
         icon: fallingStar,
-        text: 'Ex CTO, Sr. Director at PW'
+        text: 'Ex CTO, @ABCD'
     },
     {
         icon: map,
@@ -48,14 +49,14 @@ const AboutHitesh = () => {
                 background={'rgba(254, 147, 50, 0.04)'}
                 borderRadius={'12px'}
             >
-                <Image src={hiteshImage} alt="A photograph: Hitesh Choudhary, founder of ChaiCode" />
+                <Image src={nodejs} alt="A photograph: Hitesh Choudhary, founder of ChaiCode" />
                 <Flex flexDirection={'column'} gap={'24px'}>
                     <Flex
                         flexDirection={'column'}
                         gap={'16px'}
                     >
                         <Flex justify={'space-between'}>
-                            <Heading variant={'h3'}>Hitesh Choudhary</Heading>
+                            <Heading variant={'h3'}>We are</Heading>
                             <Flex gap={'16px'}>
                                 <Link href="https://x.com/Hiteshdotcom" isExternal>
                                     <Image src={twitter} height={'32px'} width={'32px'} alt="An Icon: Twitter social media profile" />

@@ -46,7 +46,7 @@ const Footer = () => {
             >
 
                 <Flex flexDirection={'column'} justify={'space-between'} mb={{base: '32px', md: '0px'}}>
-                    <Image src={chaiLogo} height={'32px'} width={'142px'} alt="An Icon: ChaiCode logo in white" />
+                    <Image src={coding} height={'32px'} width={'142px'} alt="An Icon: ChaiCode logo in white" />
                     <Show above="md">
                         <Flex flexDirection={'column'} gap={'16px'}>
                             <Flex gap={'12px'}>
@@ -70,7 +70,7 @@ const Footer = () => {
                                 </Link>
                             </Flex>
                             <Flex>
-                                <Text variant={'detail'} color={'#71717A'}>© 2025 ChaiCode. All rights reserved.</Text>
+                                <Text variant={'detail'} color={'#71717A'}>© 2025 Code. All rights reserved.</Text>
                             </Flex>
                         </Flex>
                     </Show>
@@ -157,7 +157,7 @@ const Footer = () => {
                                 </Link>
                             </Flex>
                             <Flex>
-                                <Text variant={'detail'} color={'#71717A'}>© 2025 ChaiCode. All rights reserved.</Text>
+                                <Text variant={'detail'} color={'#71717A'}>© 2025 Code. All rights reserved.</Text>
                             </Flex>
                         </Flex>
                 </Flex>
