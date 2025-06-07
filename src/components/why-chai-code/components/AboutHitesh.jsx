@@ -60,7 +60,7 @@ const AboutHitesh = () => {
                                 <Link href="https://x.com/Hiteshdotcom" isExternal>
                                     <Image src={twitter} height={'32px'} width={'32px'} alt="An Icon: Twitter social media profile" />
                                 </Link>
-                                <Link href="https://www.linkedin.com/in/hiteshchoudhary/" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={linkedin} height={'32px'} width={'32px'} alt="An Icon: LinkedIn professional network profile" />
                                 </Link>
                             </Flex>

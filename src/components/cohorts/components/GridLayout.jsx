@@ -17,7 +17,7 @@ const courseData = [
         duration: '6 months',
         icon: buyCohort,
         tags: ['Python', 'TensorFlow', 'Pandas'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227817'
+        buyNowLink: 'https://anirudhpanwar.com'
     },
     // Duplicating the same template 5 more times with slight variations
     {
@@ -30,7 +30,7 @@ const courseData = [
         duration: '1-2 months',
         icon: genAI,
         tags: ['Python', 'LLMs', 'Transformers'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227321'
+        buyNowLink: 'https://anirudhpanwar.com'
     },
     {
         title: 'DevOps for Developers 1.0',
@@ -42,7 +42,7 @@ const courseData = [
         duration: '1-2 months',
         icon: devops,
         tags: ['Docker', 'Kubernetes', 'CI/CD'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=227963'
+        buyNowLink: 'https://anirudhpanwar.com'
     },
     {
         title: 'Web Dev Cohort 1.0',
@@ -54,7 +54,7 @@ const courseData = [
         duration: '6 months',
         icon: webdevCohort,
         tags: ['JavaScript', 'React', 'Node.js'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/about?bundleId=214297'
+        buyNowLink: 'https://anirudhpanwar.com'
     },
     {
         title: 'Coding Hero 2025',
@@ -66,7 +66,7 @@ const courseData = [
         duration: 'NA',
         icon: codingHeros,
         tags: ['HTML', 'CSS', 'JavaScript'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
+        buyNowLink: 'https://anirudhpanwar.com'
     },
     {
         title: 'Coding Hero 2025',
@@ -78,7 +78,7 @@ const courseData = [
         duration: 'NA',
         icon: codingHeros,
         tags: ['HTML', 'CSS', 'JavaScript'],
-        buyNowLink: 'https://courses.chaicode.com/learn/batch/Coding-Hero-2025'
+        buyNowLink: 'https://anirudhpanwar.com'
     }
 ]
 

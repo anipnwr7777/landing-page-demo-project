@@ -49,7 +49,7 @@ const AppDownload = () => {
                         storeIcon={appstore}
                         text={'Download On The'}
                         store={'App Store'}
-                        href={'https://apps.apple.com/in/app/chaicode/id6504993143'}
+                        href={'https://anirudhpanwar.com'}
                         alt="An Icon: App Store"
                     />
                 </Flex>

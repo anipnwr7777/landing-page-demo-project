@@ -86,7 +86,7 @@ const Navbar = () => {
                         gap={'32px'}
                     >
                         <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" />
-                        <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" />
+                        <NavItem iconSrc={docsNavIcon} name="Docs" href="https://anirudhpanwar.com" target="_blank" />
                         <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" />
                         <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" />
                     </Flex>
@@ -96,7 +96,7 @@ const Navbar = () => {
                         padding={'12px 30px'} 
                         backgroundColor={'primary'} 
                         color={'white.0'}
-                        onClick={() => window.location.href = 'https://courses.chaicode.com/learn/account/signin'}
+                        onClick={() => window.location.href = 'https://anirudhpanwar.com'}
                         _hover={{ backgroundColor: '#FF7D0C', cursor: 'pointer' }}
                     >
                         Log In
@@ -155,7 +155,7 @@ const Navbar = () => {
                                 p="24px"
                             >
                                 <NavItem iconSrc={cohortNavIcon} name="Cohorts" href="#cohorts" onClose={handleDrawerClose} />
-                                <NavItem iconSrc={docsNavIcon} name="Docs" href="https://docs.chaicode.com/" target="_blank" onClose={handleDrawerClose} />
+                                <NavItem iconSrc={docsNavIcon} name="Docs" href="https://anirudhpanwar.com" target="_blank" onClose={handleDrawerClose} />
                                 <NavItem iconSrc={reviewsNavIcon} name="Reviews" href="#testimonial" onClose={handleDrawerClose} />
                                 <NavItem iconSrc={udemyNavIcon} name="Udemy" href="#udemy" onClose={handleDrawerClose} />
                             </Flex>

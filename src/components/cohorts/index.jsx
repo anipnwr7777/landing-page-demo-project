@@ -29,7 +29,7 @@ const Cohorts = () => {
                 <GridLayout />
             </Box>
             <Box mt={'32px'}>
-                <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'} />
+                <CTAButton url={'https://anirudhpanwar.com'} text={'Check all Live Cohorts'} />
             </Box>
         </Flex>
     )

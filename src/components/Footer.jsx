@@ -50,22 +50,22 @@ const Footer = () => {
                     <Show above="md">
                         <Flex flexDirection={'column'} gap={'16px'}>
                             <Flex gap={'12px'}>
-                                <Link href="https://discord.com/invite/WDrH3zuWFb" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={discordIcon} alt="An Icon: Discord social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://twitter.com/chaicode" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={twitterIcon} alt="An Icon: Twitter social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={instagramIcon} alt="An Icon: Instagram social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://github.com/hiteshchoudhary" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={githubIcon} alt="An Icon: GitHub code repository" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://in.linkedin.com/in/hiteshchoudhary" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={linkedinIcon} alt="An Icon: LinkedIn professional network" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://www.youtube.com/@chaiaurcode" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={youtubeIcon} alt="An Icon: YouTube video platform" width="24px" height="24px" />
                                 </Link>
                             </Flex>
@@ -81,27 +81,27 @@ const Footer = () => {
                         <Item 
                             icon={programming}
                             text={'Courses'}
-                            href={'https://courses.chaicode.com/learn'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={coding}
                             text={'Cohorts'}
-                            href={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={win}
                             text={'Coding Hero'}
-                            href={'https://courses.chaicode.com/learn/batch/about?bundleId=226894'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={connect}
                             text={'Free API'}
-                            href={'https://freeapi.app/'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={master}
                             text={'Masterji'}
-                            href={'https://masterji.co/login'}
+                            href={'https://anirudhpanwar.com'}
                         />
                     </Flex>
                     <Flex flexDirection={'column'} gap={'16px'}>
@@ -109,27 +109,27 @@ const Footer = () => {
                         <Item 
                             icon={docs}
                             text={'Docs'}
-                            href={'https://docs.chaicode.com/'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={policy}
                             text={'Privacy Policy'}
-                            href={'https://www.chaicode.com/privacy-policy'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={terms}
                             text={'Terms of Service'}
-                            href={'https://www.chaicode.com/terms-of-services'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={price}
                             text={'Pricing Policy'}
-                            href={'https://www.chaicode.com/pricing-policy'}
+                            href={'https://anirudhpanwar.com'}
                         />
                         <Item 
                             icon={refund}
                             text={'Refund Policy'}
-                            href={'https://www.chaicode.com/refund-policy'}
+                            href={'https://anirudhpanwar.com'}
                         />
                     </Flex>
                 </Flex>
@@ -137,22 +137,22 @@ const Footer = () => {
                 <Flex flexDirection={'column'} justify={'space-between'} mt={{ base: '32px', md: '0px' }}>
                         <Flex flexDirection={'column'} gap={'16px'}>
                             <Flex gap={'12px'}>
-                                <Link href="https://discord.com/invite/WDrH3zuWFb" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={discordIcon} alt="An Icon: Discord social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://twitter.com/chaicode" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={twitterIcon} alt="An Icon: Twitter social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://www.instagram.com/hiteshchoudharyofficial/?hl=en" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={instagramIcon} alt="An Icon: Instagram social platform" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://github.com/hiteshchoudhary" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={githubIcon} alt="An Icon: GitHub code repository" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://in.linkedin.com/in/hiteshchoudhary" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={linkedinIcon} alt="An Icon: LinkedIn professional network" width="24px" height="24px" />
                                 </Link>
-                                <Link href="https://www.youtube.com/@chaiaurcode" isExternal>
+                                <Link href="https://anirudhpanwar.com" isExternal>
                                     <Image src={youtubeIcon} alt="An Icon: YouTube video platform" width="24px" height="24px" />
                                 </Link>
                             </Flex>

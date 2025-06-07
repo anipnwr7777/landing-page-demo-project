@@ -58,7 +58,7 @@ const TweetLove = () => {
             </Text>
             <TweetCards />
             <Box mt={'32px'}>
-                <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Join Live Cohorts'} />
+                <CTAButton url={'https://anirudhpanwar.com'} text={'Join Live Cohorts'} />
             </Box>
         </Flex>
     )

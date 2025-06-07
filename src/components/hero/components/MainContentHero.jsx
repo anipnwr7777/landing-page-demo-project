@@ -102,7 +102,7 @@ const MainContentHero = () => {
                     </Flex>
                 </Show>
                 <Flex gap={'16px'}>
-                    <CTAButton url={'https://courses.chaicode.com/learn/view-all?show=batch&type=17'} text={'Check all Live Cohorts'}/>
+                    <CTAButton url={'https://anirudhpanwar.com'} text={'Check all Live Cohorts'}/>
                     <Button 
                         borderRadius={'24px'} 
                         border={'1px solid #FE9332'} 
